@@ -1,12 +1,22 @@
 .composition {
-   img{
-    width: 60%;
-    height: 60%;
-    border-radius: 20px;
-   }
+    img {
+        width: 60%;
+        height: 60%;
+        border-radius: 20px;
+        @media only screen and (max-width: 992px) {
+            width: 100%;
+        }
+    }
 }
-
-button{
+.about {
+    h2 {
+        font-family: "poppins Pro Bold";
+    }
+    p {
+        font-family: "poppins Pro Regular";
+    }
+}
+button {
     padding: 12px 55px;
     font-size: 16px;
     line-height: 18px;

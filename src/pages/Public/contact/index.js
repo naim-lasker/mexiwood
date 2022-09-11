@@ -17,7 +17,7 @@ const Contact = () => {
     };
 
     return (
-        <>
+        < div className='touch-content'>
             <BannerAboutUs
                 title="Have Question - Contact us"
                 desc="Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In Coulpa Qui Offical
@@ -25,11 +25,11 @@ const Contact = () => {
                 waterMark="Contact"
             />
 
-            <div class="container">
+            <div class="container ">
 
-                <div class="row touch-content">
+                <div class="row mt-5 py-5">
 
-                    <div class="col-12 col-md-6 bg-white">
+                    <div class="col-12 col-md-6 bg">
 
                         <div class="page-title">
 
@@ -42,15 +42,9 @@ const Contact = () => {
 
 
                         <div class="row page-content">
-
-                            <a href=""><i class=" fa fa-location-pin"></i></a>
-
-
+                            <img src={require('../../../images/1.png')}></img>
                             <p>Ta-134/A, Gulshan Badda
-
                                 Link Rd, Dhaka</p>
-
-
                         </div>
 
 
@@ -58,12 +52,12 @@ const Contact = () => {
 
                         <div class="row page-content">
 
-                            <a href=""><i class="fa fa-mobile"></i></a>
+                            <img src={require('../../../images/5.png')}></img>
 
-
-                            <p>(+088) 589-8745
-
-                                (+088) 222-9999</p>
+                            <div>
+                                <p className='mb-0'>(+088) 589-8745</p>
+                                <p className='mb-0'> (+088) 222-9999</p>
+                            </div>
 
 
                         </div>
@@ -72,34 +66,20 @@ const Contact = () => {
 
                         <div class="row page-content">
 
-                            <a href=""><i class="fa fa-envelope"></i></a>
-
-                            <p>support@rstheme.com
-
-                                info@codesless.com</p>
-
+                            <img src={require('../../../images/6.png')}></img>
+                            <div>
+                                <p className='mb-0'>support@rstheme.com</p>
+                                <p className='mb-0'> info@codesless.com</p>
+                            </div>
                         </div>
-
-
-                        <div class="row page-content">
-
-                            <a href=""><i class="fa fa-phone-rotary"></i></a>
-
-                            <p>+1245201396
-
-                                +2245201396</p>
-
-                        </div>
-
-
                     </div>
 
 
 
 
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 mt-5 mt-md-0">
 
-                        <div style={{ height: '50vh', width: '100%' }}>
+                        <div style={{ height: '80vh', width: '100%' }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "" }}
                                 defaultCenter={defaultProps.center}
@@ -114,7 +94,7 @@ const Contact = () => {
 
             </div>
 
-        </>
+        </div>
     )
 }
 

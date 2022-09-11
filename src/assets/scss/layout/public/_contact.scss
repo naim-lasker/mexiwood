@@ -11,7 +11,14 @@
         height: 40vh;
     }
     @media only screen and (max-width: 992px) {
-        height: 20vh;
+        height: 30vh;
+    }
+}
+.touch-content{
+    background-color: #ebebeb !important;
+    .bg{
+        background-color: white !important;
+        padding: 40px;
     }
 }
 .watermark {
@@ -54,6 +61,11 @@
     p {
         color: white;
         font-weight: bold;
+        max-width: 50%;
+        @media only screen and (max-width: 992px) {
+            max-width: 100%;
+
+        }
     }
     &::after {
         content: "";
@@ -97,12 +109,20 @@
 
 .page-content {
     padding-left: 20px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    img{
+        width: 50px;
+        margin-right: 20px;
+    }
 }
 
 .page-content p {
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 100;
+    max-width: 200px;
 }
 
 .bg-footer {

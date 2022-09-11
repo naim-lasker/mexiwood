@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Col, Row } from 'react-bootstrap';
 
 const Header = () => {
@@ -16,7 +15,7 @@ const Header = () => {
         <Navbar bg="light" expand="lg">
             <Container>
                 <Row className='w-100 justify-content-between'>
-                    <Col xs={3} md={6}>
+                    <Col xs={4} lg={6}>
                         <Navbar.Brand href="#home">
                             <Link to={{
                                 pathname: "/",
@@ -46,11 +45,11 @@ const Header = () => {
                             </Nav>
                         </Navbar.Collapse>
                     </Col>
-                    <Col sm={3} md={6} className="ml-auto text-end">
-                        <form class="form-inline inputs mt-0 mt-md-4 ">
+                    <Col xs={4} lg={6} className="ml-auto text-end">
+                        <form class="form-inline inputs mt-2 mt-lg-4 ">
                             <input className=" form-control mr-sm-2" type="search" placeholder="Search here" aria-label="Search"></input>
                         </form>
-                        <div class="header-right row mt-5 d-none d-md-flex">
+                        <div class="header-right row mt-5 d-none d-lg-flex">
                             <h3>Follow us -</h3>
                             <ul class="navbar-nav sm-icons">
                                 <a class="nav-link" href=""><AiFillFacebook size={20} /></a>
@@ -60,8 +59,10 @@ const Header = () => {
                             </ul>
                         </div>
                     </Col>
+                    <Col xs={4}>
+                        <Navbar.Toggle className='ml-5' aria-controls="basic-navbar-nav" />
+                    </Col>
                 </Row>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
             </Container>
         </Navbar>
     )

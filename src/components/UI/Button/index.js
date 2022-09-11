@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 export const PrimaryButton = ({ text, leftIcon, leftIconClass, rightIcon }) => {
     return (
-        <button className="btn-primary">
+        <button className="btns">
             {
                 leftIcon && <span className={`mr-4 ${leftIconClass}`}>{leftIcon && leftIcon}</span>
             }

@@ -16,7 +16,7 @@ const About = () => {
                 waterMark="About us"
             />
 
-            <Container className='pt-5 mt-5 mb-5 pb-5'>
+            <Container className='pt-5 mt-5 mb-5 pb-5 about'>
                 <div className="row justify-between items-center">
                     <div className="col-12 col-lg-6 pr-0 pr-md-50 sm:pr-15">
                         <div className="composition">
