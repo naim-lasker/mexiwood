@@ -15,8 +15,8 @@ const Header = () => {
         <Navbar bg="light" expand="lg">
             <Container>
                 <Row className='w-100 justify-content-between'>
-                    <Col xs={4} lg={6}>
-                        <Navbar.Brand href="#home">
+                    <Col xs={4} lg={6} className="d-flex flex-column align-items-start text-start">
+                        <Navbar.Brand href="/">
                             <Link to={{
                                 pathname: "/",
                             }}>
@@ -25,27 +25,16 @@ const Header = () => {
                         </Navbar.Brand>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
-                                <Link className='link' to={{
-                                    pathname: "/",
-                                }}>
-                                    <Nav.Link href="#home">Home</Nav.Link>
-                                </Link>
-                                <Nav.Link href="#link">Living</Nav.Link>
-                                <Nav.Link href="#link">Furniture</Nav.Link>
-                                <Link className='link' to={{
-                                    pathname: "/contact",
-                                }}>
-                                    <Nav.Link href="#link">Contact</Nav.Link>
-                                </Link>
-                                <Link className='link' to={{
-                                    pathname: "/about",
-                                }}>
-                                    <Nav.Link href="#link">About us</Nav.Link>
-                                </Link>
+
+                                <Nav.Link href="/">Home</Nav.Link>
+                                <Nav.Link>Living</Nav.Link>
+                                <Nav.Link>Furniture</Nav.Link>
+                                <Nav.Link href="/contact">Contact</Nav.Link>
+                                <Nav.Link href="/about">About us</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Col>
-                    <Col xs={4} lg={6} className="d-flex flex-column align-items-end text-end">
+                    <Col xs={4} lg={6} className="d-flex flex-column align-items-end text-end mb-4">
                         <form class="form-inline inputs mt-2 mt-lg-4 ">
                             <input className=" form-control mr-sm-2" type="search" placeholder="Search here" aria-label="Search"></input>
                         </form>

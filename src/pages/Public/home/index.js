@@ -23,7 +23,7 @@ const Home = () => {
                     <h2 className="furniture-content text-center text-md-left">Bathroom Vanities</h2>
                 </div>
 
-                <div className="container pt-5">
+                <div className="container py-5 mb-5">
                     <div className="row align-items-center justify-content-center">
                         {furnitureItems.length > 0 && furnitureItems.map((item, i) =>
                             <Link className="col-12 col-sm-12 col-md-3 item" to={{

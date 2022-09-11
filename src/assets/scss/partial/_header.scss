@@ -17,6 +17,9 @@ h2{
 }
 
 .header-right {
+    .nav-link{
+        transition: all 0.3s;
+    }
     h3 {
         font-size: 30px;
         font-family: "poppins Pro Regular";
@@ -28,6 +31,9 @@ h2{
     }
 }
 .navbar {
+    .nav-link{
+        transition: all 0.3s;
+    }
     .nav-link:hover {
         color: #a46d42 !important;
         transform: scale(1.2);
