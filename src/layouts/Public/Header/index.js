@@ -1,12 +1,17 @@
 import React from 'react'
+import { AiFillFacebook } from 'react-icons/ai';
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { AiFillInstagram } from 'react-icons/ai';
+import { SiTiktok } from 'react-icons/si';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
 
         <header>
-            <nav class="navbar navbar-light bg-light justify-content-between mr-auto">
+            <nav class="navbar justify-content-between mr-auto">
                 <div class="container outline">
-                    <a class="navbar-brand"><h1 class="header-title">Collective</h1></a>
+                    <a class="navbar-brand"><img src='/img/logo-white.png'></img></a>
 
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search this blog" aria-label="Search"></input>
@@ -24,31 +29,43 @@ const Header = () => {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                         <ul class="navbar-nav mr-auto navigation-menu">
-                            <li class="nav-item">
-                                <a class="nav-link" href="">All Products</a>
-                            </li>
+                            <Link to={{
+                                pathname: "/",
+                            }}>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Home</a>
+                                </li>
+                            </Link>
                             <li class="nav-item">
                                 <a class="nav-link" href=""> Living</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href=""> Furniture</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href=""> Accessory</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href=""> Contact</a>
-                            </li>
+                            <Link to={{
+                                pathname: "/contact",
+                            }}>
+                                <li class="nav-item">
+                                    <a class="nav-link" href=""> Contact</a>
+                                </li>
+                            </Link>
+                            <Link to={{
+                                pathname: "/about",
+                            }}>
+                                <li class="nav-item">
+                                    <a class="nav-link" href=""> About us</a>
+                                </li>
+                            </Link>
                         </ul>
 
 
                         <div class="header-right row">
-                            <h3>Follow us-</h3>
+                            <h3>Follow us -</h3>
                             <ul class="navbar-nav sm-icons">
-                                <a class="nav-link" href=""><i class="fa fa-facebook"></i></a>
-                                <a class="nav-link" href=""><i class="fa fa-twitter"></i></a>
-                                <a class="nav-link" href=""><i class="fa fa-instagram"></i></a>
-                                <a class="nav-link" href=""><i class="fa fa-tiktok"></i></a>
+                                <a class="nav-link" href=""><AiFillFacebook size={20} /></a>
+                                <a class="nav-link" href=""><AiOutlineTwitter size={20} /></a>
+                                <a class="nav-link" href=""><AiFillInstagram size={20} /></a>
+                                <a class="nav-link" href=""><SiTiktok size={20} /></a>
                             </ul>
                         </div>
 

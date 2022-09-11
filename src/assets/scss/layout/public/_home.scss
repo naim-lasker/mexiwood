@@ -4,6 +4,11 @@
     // height: 100vh;
 }
 
+.furniture-content{
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .furniture-img {
     background-color: gray;
     font-size: 20px;
@@ -19,3 +24,13 @@
     font-weight: bold;
 }
 //----------- End News Area -------------//
+.card-header {
+    background-color: lightgray;
+    cursor: pointer;
+    border-bottom: none;
+  }
+  
+  .card-header.active {
+    background-color: #a46d42;
+    color: white;
+  }
