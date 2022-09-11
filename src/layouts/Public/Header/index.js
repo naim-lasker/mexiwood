@@ -45,7 +45,7 @@ const Header = () => {
                             </Nav>
                         </Navbar.Collapse>
                     </Col>
-                    <Col xs={4} lg={6} className="ml-auto text-end">
+                    <Col xs={4} lg={6} className="d-flex flex-column align-items-end text-end">
                         <form class="form-inline inputs mt-2 mt-lg-4 ">
                             <input className=" form-control mr-sm-2" type="search" placeholder="Search here" aria-label="Search"></input>
                         </form>
