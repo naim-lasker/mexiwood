@@ -1,14 +1,18 @@
 .bg-img {
-    width: 100%;
     background-image: url("../../../../images/banner.jpg");
-    background-position: center center;
-    background-size: cover;
     height: 80vh;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-repeat:no-repeat;
+    background-size:100%;
+    // background-position:center;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    @media only screen and (max-width: 1192px) {
+        height: 40vh;
+    }
+    @media only screen and (max-width: 992px) {
+        height: 20vh;
+    }
 }
 .watermark {
     position: absolute;
@@ -22,6 +26,10 @@
     color: inherit;
     white-space: nowrap;
     vertical-align: middle;
+    @media only screen and (max-width: 1192px) {
+       display: none;
+       position: relative;
+    }
 }
 
 .hearderset {
@@ -35,19 +43,26 @@
         color: white;
         font-weight: bold;
         font-family: sans-serif;
+        @media only screen and (max-width: 1192px) {
+            font-size: 30px;
+        }
+        @media only screen and (max-width: 992px) {
+            font-size: 20px;
+
+        }
     }
     p {
         color: white;
         font-weight: bold;
     }
-    &::after{
+    &::after {
         content: "";
         height: 5px;
         position: absolute;
         top: 0px;
         left: 20;
-        -webkit-transition: all .3s ease;
-        transition: all .3s ease;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
         z-index: -1;
         background: #bb0b0b;
         width: 65px;

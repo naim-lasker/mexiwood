@@ -99,7 +99,7 @@ const Details = (props) => {
                     <Col xs={12} className="mx-auto text-center py-4">
                     <h2>{singleItem.catagory}</h2>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={12}>
                         <div className="slider-wrapper">
 
                             {/* <button className='custom-prev' onClick={checkPrev}><FaArrowLeft size={30} /></button>
@@ -142,7 +142,7 @@ const Details = (props) => {
                         </div>
                     </Col>
 
-                    <Col xs={5}>
+                    <Col xs={12} className="mt-4 mt-md-0">
                         <Row>
                             <Col>
                                 <img className="slick-slide-image img-fluid" onClick={() => testImage('cream')} src={require(`../../../images/colors/img1.jpg`)} />

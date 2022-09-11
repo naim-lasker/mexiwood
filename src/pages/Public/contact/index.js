@@ -29,7 +29,7 @@ const Contact = () => {
 
                 <div class="row touch-content">
 
-                    <div class="col-md-6 touch-content-title bg-white" height="400px" width="500px">
+                    <div class="col-12 col-md-6 bg-white">
 
                         <div class="page-title">
 
@@ -97,7 +97,7 @@ const Contact = () => {
 
 
 
-                    <div class="col-md-6 touch-img">
+                    <div class="col-12 col-md-6">
 
                         <div style={{ height: '50vh', width: '100%' }}>
                             <GoogleMapReact

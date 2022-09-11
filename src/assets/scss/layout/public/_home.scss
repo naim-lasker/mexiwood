@@ -4,13 +4,21 @@
     // height: 100vh;
 }
 
+.item{
+    width: 20% !important;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .furniture-content{
     font-size: 30px;
     font-weight: 600;
 }
 
 .furniture-img {
-    background-color: gray;
+    // background-color: gray;
     font-size: 20px;
     width: 50%;
     border-radius: 50%;
