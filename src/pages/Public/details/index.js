@@ -97,9 +97,9 @@ const Details = (props) => {
             <Container fluid className='pt-5'>
                 <Row>
                     <Col xs={12} className="mx-auto text-center py-4">
-                    <h2>{singleItem.catagory}</h2>
+                    <h2 >{singleItem.catagory}</h2>
                     </Col>
-                    <Col xs={12}>
+                    <Col xs={12} md={6}>
                         <div className="slider-wrapper">
 
                             {/* <button className='custom-prev' onClick={checkPrev}><FaArrowLeft size={30} /></button>
@@ -142,7 +142,7 @@ const Details = (props) => {
                         </div>
                     </Col>
 
-                    <Col xs={12} className="mt-4 mt-md-0">
+                    <Col xs={12} md={6} className="mt-4 mt-md-0">
                         <Row>
                             <Col>
                                 <img className="slick-slide-image img-fluid" onClick={() => testImage('cream')} src={require(`../../../images/colors/img1.jpg`)} />
@@ -156,8 +156,8 @@ const Details = (props) => {
 
                         </Row>
                         <Row>
-                            <Col>
-                                <ul className='pt-5'>
+                            <Col className='list'>
+                                <ul className='pt-5 '>
 
                                     <li>Light Gray Finish</li>
 
@@ -215,7 +215,7 @@ const Details = (props) => {
                                             as={Card.Header}
                                             eventKey="0"
                                             onClick={() => toggleActive("0")}
-                                            className={activeId === "0" ? "active" : null}
+                                            className={activeId === "0" ? "active title" : 'title'}
                                         >
                                             Specifications
                                         </Accordion.Toggle>
@@ -235,7 +235,7 @@ const Details = (props) => {
                                             as={Card.Header}
                                             eventKey="1"
                                             onClick={() => toggleActive("1")}
-                                            className={activeId === "1" ? "active" : null}
+                                            className={activeId === "1" ? "active title" : 'title'}
                                         >
                                             Disclaimers
                                         </Accordion.Toggle>
@@ -255,7 +255,7 @@ const Details = (props) => {
                                             as={Card.Header}
                                             eventKey="2"
                                             onClick={() => toggleActive("2")}
-                                            className={activeId === "2" ? "active" : null}
+                                            className={activeId === "2" ? "active title" : 'title'}
                                         >
                                             Resources
                                         </Accordion.Toggle>
@@ -275,7 +275,7 @@ const Details = (props) => {
                                             as={Card.Header}
                                             eventKey="3"
                                             onClick={() => toggleActive("3")}
-                                            className={activeId === "3" ? "active" : null}
+                                            className={activeId === "3" ? "active title" : 'title'}
                                         >
                                             Shipping and Returns
                                         </Accordion.Toggle>
@@ -295,7 +295,7 @@ const Details = (props) => {
                                             as={Card.Header}
                                             eventKey="4"
                                             onClick={() => toggleActive("4")}
-                                            className={activeId === "4" ? "active" : null}
+                                            className={activeId === "4" ? "active title" : 'title'}
                                         >
                                             Reviews
                                         </Accordion.Toggle>
@@ -315,7 +315,7 @@ const Details = (props) => {
                                             as={Card.Header}
                                             eventKey="5"
                                             onClick={() => toggleActive("5")}
-                                            className={activeId === "5" ? "active" : null}
+                                            className={activeId === "5" ? "active title" : 'title'}
                                         >
                                             Q & A
                                         </Accordion.Toggle>

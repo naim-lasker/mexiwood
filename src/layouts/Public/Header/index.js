@@ -4,62 +4,53 @@ import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { SiTiktok } from 'react-icons/si';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Col, Row } from 'react-bootstrap';
 
 const Header = () => {
     return (
 
-        <header>
-            <nav class="navbar justify-content-between mr-auto">
-                <div class="container outline">
-                    <a class="navbar-brand"><img src='/img/logo-white.png'></img></a>
-
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search this blog" aria-label="Search"></input>
-                    </form>
-                </div>
-            </nav>
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container">
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <ul class="navbar-nav mr-auto navigation-menu">
+        <Navbar bg="light" expand="lg">
+            <Container>
+                <Row className='w-100 justify-content-between'>
+                    <Col xs={3} md={6}>
+                        <Navbar.Brand href="#home">
                             <Link to={{
                                 pathname: "/",
                             }}>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="">Home</a>
-                                </li>
+                                <a class="navbar-brand"><img src='/img/logo-white.png'></img></a>
                             </Link>
-                            <li class="nav-item">
-                                <a class="nav-link" href=""> Living</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href=""> Furniture</a>
-                            </li>
-                            <Link to={{
-                                pathname: "/contact",
-                            }}>
-                                <li class="nav-item">
-                                    <a class="nav-link" href=""> Contact</a>
-                                </li>
-                            </Link>
-                            <Link to={{
-                                pathname: "/about",
-                            }}>
-                                <li class="nav-item">
-                                    <a class="nav-link" href=""> About us</a>
-                                </li>
-                            </Link>
-                        </ul>
-
-
-                        <div class="header-right row">
+                        </Navbar.Brand>
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="me-auto">
+                                <Link className='link' to={{
+                                    pathname: "/",
+                                }}>
+                                    <Nav.Link href="#home">Home</Nav.Link>
+                                </Link>
+                                <Nav.Link href="#link">Living</Nav.Link>
+                                <Nav.Link href="#link">Furniture</Nav.Link>
+                                <Link className='link' to={{
+                                    pathname: "/contact",
+                                }}>
+                                    <Nav.Link href="#link">Contact</Nav.Link>
+                                </Link>
+                                <Link className='link' to={{
+                                    pathname: "/about",
+                                }}>
+                                    <Nav.Link href="#link">About us</Nav.Link>
+                                </Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Col>
+                    <Col sm={3} md={6} className="ml-auto text-end">
+                        <form class="form-inline inputs mt-0 mt-md-4 ">
+                            <input className=" form-control mr-sm-2" type="search" placeholder="Search here" aria-label="Search"></input>
+                        </form>
+                        <div class="header-right row mt-5 d-none d-md-flex">
                             <h3>Follow us -</h3>
                             <ul class="navbar-nav sm-icons">
                                 <a class="nav-link" href=""><AiFillFacebook size={20} /></a>
@@ -68,11 +59,11 @@ const Header = () => {
                                 <a class="nav-link" href=""><SiTiktok size={20} /></a>
                             </ul>
                         </div>
-
-                    </div>
-                </div>
-            </nav>
-        </header>
+                    </Col>
+                </Row>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            </Container>
+        </Navbar>
     )
 }
 

@@ -1,20 +1,51 @@
 /*--------------------------------------------------------------
 # Start Header Styles
 --------------------------------------------------------------*/
-.navbar-brand{
-    img{
-        width:150px;
-        height: 100px;
+.navbar-brand {
+    img {
+        width: 150px;
+        height: 70px;
     }
 }
 
-.sm-icons{
-    padding:0 20px;
+.sm-icons {
+    padding: 0 20px;
 }
 
-.header-right{
-    h3{
+h2{
+    font-family: "poppins Pro Regular";
+}
+
+.header-right {
+    h3 {
         font-size: 30px;
+        font-family: "poppins Pro Regular";
+    }
+    .nav-link:hover {
+        color: #a46d42 !important;
+        transform: scale(1.2);
+        font-family: "poppins Pro Regular";
+    }
+}
+.navbar {
+    .nav-link:hover {
+        color: #a46d42 !important;
+        transform: scale(1.2);
+    }
+    .link {
+        text-decoration: none !important;
+        font-family: "poppins Pro Regular";
+    }
+}
+
+.inputs {
+    font-family: "poppins Pro Regular";
+    .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color: #a46d42;
+        outline: 0;
+        box-shadow: 0 0 0 0.05rem #a46d42;
     }
 }
 /*--------------------------------------------------------------

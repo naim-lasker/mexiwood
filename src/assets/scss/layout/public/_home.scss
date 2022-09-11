@@ -10,11 +10,21 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-decoration: none;
+    color: #000;
+    &:hover{
+        text-decoration: none;
+        color: #a46d42 !important;
+    }
+    @media only screen and (max-width: 768px) {
+        margin-top: 50px;
+    }
 }
 
 .furniture-content{
     font-size: 30px;
     font-weight: 600;
+    font-family: "poppins Pro Bold";
 }
 
 .furniture-img {
@@ -28,7 +38,7 @@
 .furniture-text {
     padding-top: 20px;
     font-size: 20px;
-    font-family: sans-serif !important;
+    font-family: "poppins Pro Bold";
     font-weight: bold;
 }
 //----------- End News Area -------------//
@@ -42,3 +52,16 @@
     background-color: #a46d42;
     color: white;
   }
+
+  .list{
+
+    li{
+        font-family: "poppins Pro Regular";
+      }
+      p{
+        font-family: "poppins Pro Regular";
+      }
+      .title{
+        font-family: "poppins Pro Bold";
+      }
+  } 

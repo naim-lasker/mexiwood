@@ -1,34 +1,33 @@
-// @font-face {
-//     font-family: "Myriad Pro Regular";
-//     font-style: normal;
-//     font-weight: normal;
-//     src: local("Myriad Pro Regular"), url(../../fonts/MYRIADPRO-REGULAR.woff) format("woff");
-// }
+@font-face {
+    font-family: "poppins Pro Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("poppins Pro Regular"), url(../../Poppins/Poppins-Regular.ttf) format("ttf");
+}
+@font-face {
+    font-family: "poppins Pro Condensed Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("poppins Pro Condensed Italic"), url(../../Poppins/Poppins-Italic.ttf) format("ttf");
+}
 
-// @font-face {
-//     font-family: "Myriad Pro Condensed Italic";
-//     font-style: normal;
-//     font-weight: normal;
-//     src: local("Myriad Pro Condensed Italic"), url(../../fonts/MYRIADPRO-CONDIT.woff) format("woff");
-// }
+@font-face {
+    font-family: "poppins Pro Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("poppins Pro Light"), url(../../Poppins/Poppins-Light.ttf) format("ttf");
+}
 
-// @font-face {
-//     font-family: "Myriad Pro Light";
-//     font-style: normal;
-//     font-weight: normal;
-//     src: local("Myriad Pro Light"), url(../../fonts/MyriadPro-Light.woff) format("woff");
-// }
+@font-face {
+    font-family: "poppins Pro Semibold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("poppins Pro Semibold"), url(../../Poppins/Poppins-SemiBold.ttf) format("ttf");
+}
 
-// @font-face {
-//     font-family: "Myriad Pro Semibold";
-//     font-style: normal;
-//     font-weight: normal;
-//     src: local("Myriad Pro Semibold"), url(../../fonts/MYRIADPRO-SEMIBOLD.woff) format("woff");
-// }
-
-// @font-face {
-//     font-family: "Myriad Pro Bold";
-//     font-style: normal;
-//     font-weight: normal;
-//     src: local("Myriad Pro Bold"), url(../../fonts/MYRIADPRO-BOLD.woff) format("woff");
-// }
+@font-face {
+    font-family: "poppins Pro Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("poppins Pro Bold"), url(../../Poppins/Poppins-Bold.ttf) format("ttf");
+}
