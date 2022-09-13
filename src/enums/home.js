@@ -1,40 +1,40 @@
 export const furnitureItems = [
     {
         catagory: '24-Inch Vanities',
-        img: "/img/furniture-1.jpeg"
+        img: "/img/fur1.jpg"
     },
     {
         catagory: '30-Inch Vanities',
-        img: "/img/furniture-2.jpg"
+        img: "/img/fur2.jpg"
 
     },
     {
         catagory: '24-Inch Vanities',
-        img: "/img/furniture-1.jpeg"
+        img: "/img/fur3.jpg"
     },
     {
         catagory: '30-Inch Vanities',
-        img: "/img/furniture-2.jpg"
+        img: "/img/fur3.jpg"
 
     },
     {
         catagory: '36-Inch Vanities',
-        img: "/img/furniture-3.jpg"
+        img: "/img/fur4.jpg"
 
     },
     {
         catagory: '48-Inch Vanities',
-        img: "/img/furniture-4.jpeg"
+        img: "/img/fur5.jpg"
 
     },
     {
         catagory: '48-Inch Vanities',
-        img: "/img/furniture-4.jpeg"
+        img: "/img/fur6.jpg"
 
     },
     {
         catagory: '48-Inch Vanities',
-        img: "/img/furniture-4.jpeg"
+        img: "/img/fur7.jpg"
 
     }
 ]

@@ -180,14 +180,14 @@ const Home = () => {
                     </Slider>
                 </div>
 
-                <div className="App">
+                <div className="container">
                     <Container fluid className='pt-5'>
                         <Row>
                             <Col xs={12} md={6}>
                                 <div className="slider-wrapper">
 
-                                    <button className='custom-prev' onClick={checkPrev}><FaArrowLeft color='white' size={30} /></button>
-                                    <button className='custom-next' onClick={checkNext}><FaArrowRight color='white' size={30} /></button>
+                                    <button className='custom-prev' onClick={checkPrev}><FaArrowLeft color='white' size={6} /></button>
+                                    <button className='custom-next' onClick={checkNext}><FaArrowRight color='white' size={6} /></button>
 
                                     <Slider
                                         {...settingsMain}
@@ -206,7 +206,7 @@ const Home = () => {
                                         )}
                                     </Slider>
 
-                                    <div className="thumbnail-slider-wrap">
+                                    <div className="thumbnail-slider-wrap mt-5">
                                         <Slider
                                             {...settingsThumbs}
                                             asNavFor={nav1}
@@ -305,7 +305,7 @@ const Home = () => {
                                         </ul>
 
 
-                                        <Accordion defaultActiveKey={activeId} className="pt-5">
+                                        <Accordion defaultActiveKey={activeId} className="pt-5 pb-5 mb-5">
                                             <Card className="rounded-lg mb-3 border-0">
                                                 <Accordion.Toggle
                                                     as={Card.Header}

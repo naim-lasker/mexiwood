@@ -1,7 +1,7 @@
 //--------- Start News Area -------------//
 .video {
   position: relative;
-  height: 60vh;
+  height: 70vh;
 }
 .overlay{
   background-color: #a46d42;
@@ -14,8 +14,8 @@
 }
 .video video {
   object-fit: cover;
-  width: 100vw;
-  height: 60vh;
+  width: 99vw;
+  height: 70vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -55,7 +55,7 @@
 .furniture-img {
   // background-color: gray;
   font-size: 20px;
-  width: 50%;
+  width: 80%;
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -91,11 +91,18 @@
 }
 
 .color-item img{
-  width: 70%;
+  width: 100%;
   height: 200px;
   @media only screen and (max-width: 768px) {
     width: 100%; 
   }
+}
+
+.color-item{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .main{
@@ -108,16 +115,47 @@
   }
 }
 
-
-.custom-prev{
-  background-color: #a46d42;
-  border-radius: 10px;
-  outline: 0 !important;
-  border: none !important;
-}
-.custom-next{
-  background-color: #a46d42;
-  border-radius: 10px;
-  outline: 0 !important;
-  border: none !important;
+.slider-wrapper{
+  position: relative;
+  .slide-arrow{
+    position: absolute;
+    bottom: 50%;
+    margin-top: -15px;
+  }
+  .custom-prev{
+    left: -20px;
+    width: 0;
+    position: absolute;
+    bottom: 6%;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 15px solid #a46d42;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .custom-next{
+    right: -20px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 6%;
+    border-right: 0 solid transparent;
+    border-left: 15px solid #a46d42;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  button{
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    position: absolute;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
 }
