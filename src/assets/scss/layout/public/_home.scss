@@ -92,12 +92,18 @@
 
 .color-item img{
   width: 70%;
-  height: 200px
+  height: 200px;
+  @media only screen and (max-width: 768px) {
+    width: 100%; 
+  }
 }
 
 .main{
   img{
     height: 600px;
     width: 50vw;
+    @media only screen and (max-width: 768px) {
+      width: 100%; 
+    }
   }
 }
