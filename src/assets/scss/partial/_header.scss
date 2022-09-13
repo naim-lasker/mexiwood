@@ -24,7 +24,7 @@ h2{
         font-family: "poppins Pro Regular";
     }
     .nav-link:hover {
-        color: #a46d42 !important;
+        color: cadetblue !important;
         transform: scale(1.2);
         font-family: "poppins Pro Regular";
     }
@@ -36,7 +36,7 @@ h2{
         * > :last-child { padding-right: 0; }
     }
     .nav-link:hover {
-        color: #a46d42 !important;
+        color: cadetblue !important;
         transform: scale(1.2);
     }
     .link {
@@ -54,9 +54,9 @@ h2{
     &:focus {
         color: #495057;
         background-color: #fff;
-        border-color: #a46d42;
+        border-color: cadetblue;
         outline: 0;
-        box-shadow: 0 0 0 0.05rem #a46d42;
+        box-shadow: 0 0 0 0.05rem cadetblue;
     }
 }
 /*--------------------------------------------------------------

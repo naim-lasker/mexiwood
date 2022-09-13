@@ -12,7 +12,7 @@ import { Col, Row } from 'react-bootstrap';
 const Header = () => {
     return (
 
-        <Navbar bg="light" expand="lg">
+        <Navbar style={{backgroundColor:'rgb(247, 247, 247)'}} expand="lg">
             <Container>
                 <Row className='w-100 justify-content-between'>
                     <Col xs={4} lg={6} className="d-flex flex-column align-items-start justify-content-between text-center">

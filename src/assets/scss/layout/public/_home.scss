@@ -46,7 +46,7 @@
   transition: all 0.3s;
   &:hover {
     text-decoration: none;
-    color: #a46d42 !important;
+    color: cadetblue  !important;
   }
   @media only screen and (max-width: 768px) {
     margin: auto !important;
@@ -81,7 +81,7 @@
 }
 
 .card-header.active {
-  background-color: #a46d42;
+  background-color: cadetblue ;
   color: white;
 }
 
@@ -136,7 +136,7 @@
     bottom: 6%;
     height: 0;
     border-left: 0 solid transparent;
-    border-right: 15px solid #a46d42;
+    border-right: 15px solid cadetblue ;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }
@@ -147,7 +147,7 @@
     position: absolute;
     bottom: 6%;
     border-right: 0 solid transparent;
-    border-left: 15px solid #a46d42;
+    border-left: 15px solid cadetblue ;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
   }

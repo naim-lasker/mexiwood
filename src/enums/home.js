@@ -14,7 +14,7 @@ export const furnitureItems = [
     },
     {
         catagory: '30-Inch Vanities',
-        img: "/img/fur3.jpg"
+        img: "/img/fur8.jpg"
 
     },
     {
