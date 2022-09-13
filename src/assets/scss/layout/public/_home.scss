@@ -1,68 +1,103 @@
 //--------- Start News Area -------------//
-.banner-video {
-    width: 100%;
-    // height: 100vh;
+.video {
+  position: relative;
+  height: 60vh;
+}
+.overlay{
+  background-color: #a46d42;
+  top: 0;
+  opacity: 0.5;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.video video {
+  object-fit: cover;
+  width: 100vw;
+  height: 60vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-carousel{
+  .slick-track {
+    margin:auto !important;
+}
 }
 
-.item{
-    width: 20% !important;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.item {
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  display: flex !important;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto !important;
+  transition: all 0.3s;
+  &:hover {
     text-decoration: none;
-    color: #000;
-    transition: all 0.3s;
-    &:hover{
-        text-decoration: none;
-        color: #a46d42 !important;
-    }
-    @media only screen and (max-width: 768px) {
-        margin-top: 50px;
-    }
+    color: #a46d42 !important;
+  }
+  @media only screen and (max-width: 768px) {
+    margin:auto !important;
+    
+  }
 }
 
-.furniture-content{
-    font-size: 30px;
-    font-weight: 600;
-    font-family: "poppins Pro Bold";
+.furniture-content {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: "poppins Pro Bold";
 }
 
 .furniture-img {
-    // background-color: gray;
-    font-size: 20px;
-    width: 50%;
-    border-radius: 50%;
-    border: 1px solid white;
+  // background-color: gray;
+  font-size: 20px;
+  width: 50%;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 .furniture-text {
-    padding-top: 20px;
-    font-size: 20px;
-    font-family: "poppins Pro Bold";
-    font-weight: bold;
+  padding-top: 20px;
+  font-size: 20px;
+  font-family: "poppins Pro Bold";
+  font-weight: bold;
 }
 //----------- End News Area -------------//
 .card-header {
-    background-color: lightgray;
-    cursor: pointer;
-    border-bottom: none;
-  }
-  
-  .card-header.active {
-    background-color: #a46d42;
-    color: white;
-  }
+  background-color: lightgray;
+  cursor: pointer;
+  border-bottom: none;
+}
 
-  .list{
+.card-header.active {
+  background-color: #a46d42;
+  color: white;
+}
 
-    li{
-        font-family: "poppins Pro Regular";
-      }
-      p{
-        font-family: "poppins Pro Regular";
-      }
-      .title{
-        font-family: "poppins Pro Bold";
-      }
-  } 
+.list {
+  li {
+    font-family: "poppins Pro Regular";
+  }
+  p {
+    font-family: "poppins Pro Regular";
+  }
+  .title {
+    font-family: "poppins Pro Bold";
+  }
+}
+
+.color-item img{
+  width: 70%;
+  height: 200px
+}
+
+.main{
+  img{
+    height: 600px;
+    width: 50vw;
+  }
+}

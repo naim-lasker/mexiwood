@@ -20,7 +20,7 @@ const Header = () => {
                             <Link to={{
                                 pathname: "/",
                             }}>
-                                <a class="navbar-brand"><img src='/img/logo-white.png'></img></a>
+                                <h2>Logo</h2>
                             </Link>
                         </Navbar.Brand>
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -34,11 +34,11 @@ const Header = () => {
                             </Nav>
                         </Navbar.Collapse>
                     </Col>
-                    <Col xs={4} lg={6} className="d-flex flex-column align-items-end text-end mb-4">
-                        <form class="form-inline inputs mt-2 mt-lg-4 ">
+                    <Col xs={4} lg={6} className="d-flex flex-column align-items-end text-end">
+                        <form class="form-inline inputs mt-2 mt-lg-2 ">
                             <input className=" form-control mr-sm-2" type="search" placeholder="Search here" aria-label="Search"></input>
                         </form>
-                        <div class="header-right row mt-5 d-none d-lg-flex">
+                        <div class="header-right row mt-3 d-none d-lg-flex">
                             <h3>Follow us -</h3>
                             <ul class="navbar-nav sm-icons">
                                 <a class="nav-link" href=""><AiFillFacebook size={20} /></a>

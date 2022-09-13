@@ -43,7 +43,7 @@ const Contact = () => {
 
                         <div class="row page-content">
                             <img src={require('../../../images/1.png')}></img>
-                            <p>Ta-134/A, Gulshan Badda
+                            <p className='mb-0'>Ta-134/A, Gulshan Badda
                                 Link Rd, Dhaka</p>
                         </div>
 
