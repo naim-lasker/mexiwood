@@ -8,10 +8,6 @@
     }
 }
 
-.sm-icons {
-    padding: 0 20px;
-}
-
 h2{
     font-family: "poppins Pro Regular";
 }
@@ -20,7 +16,8 @@ h2{
     .nav-link{
         transition: all 0.3s;
         padding-right: 0 !important;
-        margin-left: 10px !important;
+        margin-left: 0px !important;
+        cursor: pointer;
     }
     h3 {
         font-size: 30px;
@@ -35,7 +32,8 @@ h2{
 .navbar {
     .nav-link{
         transition: all 0.3s;
-        padding-left: 0 !important;
+        padding-right: 20px !important;
+        * > :last-child { padding-right: 0; }
     }
     .nav-link:hover {
         color: #a46d42 !important;
@@ -49,7 +47,11 @@ h2{
 
 .inputs {
     font-family: "poppins Pro Regular";
-    .form-control:focus {
+    width: 50%;
+    @media only screen and (max-width: 992px) {
+        width: 80% !important;
+      }
+    &:focus {
         color: #495057;
         background-color: #fff;
         border-color: #a46d42;

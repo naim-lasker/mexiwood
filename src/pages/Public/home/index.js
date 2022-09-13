@@ -121,7 +121,7 @@ const Home = () => {
             }
         }
     }
-    const [activeId, setActiveId] = useState("1");
+    const [activeId, setActiveId] = useState("0");
 
     function toggleActive(id) {
         if (activeId === id) {

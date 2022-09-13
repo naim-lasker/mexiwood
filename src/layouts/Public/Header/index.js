@@ -15,7 +15,7 @@ const Header = () => {
         <Navbar bg="light" expand="lg">
             <Container>
                 <Row className='w-100 justify-content-between'>
-                    <Col xs={4} lg={6} className="d-flex flex-column align-items-start text-start">
+                    <Col xs={4} lg={6} className="d-flex flex-column align-items-start justify-content-between text-center">
                         <Navbar.Brand href="/">
                             <img style={{width:100}} src='/img/logo2.png'></img>
                         </Navbar.Brand>
@@ -30,10 +30,10 @@ const Header = () => {
                             </Nav>
                         </Navbar.Collapse>
                     </Col>
-                    <Col xs={4} lg={6} className="d-flex flex-column align-items-end text-end">
-                        <form className="form-inline inputs mt-2 mt-lg-2 ">
-                            <input className=" form-control mr-sm-2" type="search" placeholder="Search here" aria-label="Search"></input>
-                        </form>
+                    <Col xs={4} lg={6} className="d-flex flex-column align-items-end justify-content-between text-end">
+                        {/* <form className="form-inline   "> */}
+                            <input className="form-control inputs mt-4 mt-lg-2" type="search" placeholder="Search here" aria-label="Search"></input>
+                        {/* </form> */}
                         <div className="header-right row mt-3 d-none d-lg-flex">
                             <h3>Follow us -</h3>
                             <ul className="navbar-nav sm-icons">
@@ -45,7 +45,7 @@ const Header = () => {
                         </div>
                     </Col>
                     <Col xs={4}>
-                        <Navbar.Toggle className='ml-5' aria-controls="basic-navbar-nav" />
+                        <Navbar.Toggle className='ml-5 mt-2 mt-lg-2' aria-controls="basic-navbar-nav" />
                     </Col>
                 </Row>
             </Container>

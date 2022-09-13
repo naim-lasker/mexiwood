@@ -5,9 +5,9 @@ const Footer = () => {
     return (
         <div className="footer-bottom">
             <div className="container">
-                <div className="row">
+                <div className="row  justify-content-center">
                     <div className="col-lg-6 md-mb-10 text-lg-end text-center order-last">
-                        <ul className="copy-right-menu row">
+                        <ul className="copy-right-menu row align-items-center justify-content-center">
                             <li>
                                 <Link className='link' to={{
                                     pathname: "/",
