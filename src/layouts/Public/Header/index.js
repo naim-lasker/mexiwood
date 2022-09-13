@@ -17,7 +17,7 @@ const Header = () => {
                 <Row className='w-100 justify-content-between'>
                     <Col xs={4} lg={6} className="d-flex flex-column align-items-start text-start">
                         <Navbar.Brand href="/">
-                            <h2>Logo</h2>
+                            <img style={{width:100}} src='/img/logo2.png'></img>
                         </Navbar.Brand>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
