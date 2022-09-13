@@ -8,12 +8,7 @@ import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import { slidesData } from '../../../enums/slider'
 import { Popover, PopoverBody } from 'reactstrap';
-import { FaArrowCircleRight, FaArrowLeft, FaArrowRight, FaBeer } from 'react-icons/fa';
-
-
-
-
-
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 
 const Home = () => {
@@ -158,7 +153,7 @@ const Home = () => {
         <>
 
 
-            <div class="video">
+            <div className="video">
                 <video ref={vidRef} autoPlay muted loop>
                     <source src="https://mexiwood.mx/images/videos/plywood-vid-3.mp4" type="video/mp4"></source>
                 </video>
@@ -172,7 +167,7 @@ const Home = () => {
                 <div className="container py-5 mb-5">
                     <Slider {...settings} >
                         {furnitureItems.length > 0 && furnitureItems.map((item, i) =>
-                            <div className="item">
+                            <div className="item" key={i}>
                                 <img className="furniture-img" src={item.img}></img>
                                 <p className="furniture-text">{item.catagory}</p>
                             </div>

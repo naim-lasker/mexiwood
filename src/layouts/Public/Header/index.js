@@ -17,11 +17,7 @@ const Header = () => {
                 <Row className='w-100 justify-content-between'>
                     <Col xs={4} lg={6} className="d-flex flex-column align-items-start text-start">
                         <Navbar.Brand href="/">
-                            <Link to={{
-                                pathname: "/",
-                            }}>
-                                <h2>Logo</h2>
-                            </Link>
+                            <h2>Logo</h2>
                         </Navbar.Brand>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
@@ -35,16 +31,16 @@ const Header = () => {
                         </Navbar.Collapse>
                     </Col>
                     <Col xs={4} lg={6} className="d-flex flex-column align-items-end text-end">
-                        <form class="form-inline inputs mt-2 mt-lg-2 ">
+                        <form className="form-inline inputs mt-2 mt-lg-2 ">
                             <input className=" form-control mr-sm-2" type="search" placeholder="Search here" aria-label="Search"></input>
                         </form>
-                        <div class="header-right row mt-3 d-none d-lg-flex">
+                        <div className="header-right row mt-3 d-none d-lg-flex">
                             <h3>Follow us -</h3>
-                            <ul class="navbar-nav sm-icons">
-                                <a class="nav-link" href=""><AiFillFacebook size={20} /></a>
-                                <a class="nav-link" href=""><AiOutlineTwitter size={20} /></a>
-                                <a class="nav-link" href=""><AiFillInstagram size={20} /></a>
-                                <a class="nav-link" href=""><SiTiktok size={20} /></a>
+                            <ul className="navbar-nav sm-icons">
+                                <div className="nav-link"><AiFillFacebook size={20} /></div>
+                                <div className="nav-link"><AiOutlineTwitter size={20} /></div>
+                                <div className="nav-link"><AiFillInstagram size={20} /></div>
+                                <div className="nav-link"><SiTiktok size={20} /></div>
                             </ul>
                         </div>
                     </Col>
