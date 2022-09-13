@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom';
 import { furnitureItems } from '../../../enums/home';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
@@ -8,7 +7,9 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import { slidesData } from '../../../enums/slider'
-import { Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
+import { Popover, PopoverBody } from 'reactstrap';
+import { FaArrowCircleRight, FaArrowLeft, FaArrowRight, FaBeer } from 'react-icons/fa';
+
 
 
 
@@ -185,8 +186,8 @@ const Home = () => {
                             <Col xs={12} md={6}>
                                 <div className="slider-wrapper">
 
-                                    {/* <button className='custom-prev' onClick={checkPrev}><FaArrowLeft size={30} /></button>
-                <button className='custom-next' onClick={checkNext}><FaArrowRight size={30} /></button> */}
+                                    <button className='custom-prev' onClick={checkPrev}><FaArrowLeft color='white' size={30} /></button>
+                                    <button className='custom-next' onClick={checkNext}><FaArrowRight color='white' size={30} /></button>
 
                                     <Slider
                                         {...settingsMain}
@@ -230,7 +231,7 @@ const Home = () => {
                                     <Col>
                                         <img id="Popover1" onMouseEnter={onHover} onMouseLeave={onHoverLeave} className="slick-slide-image img-fluid" onClick={() => testImage('cream')} src={require(`../../../images/colors/img1.jpg`)} />
                                         <Popover placement="top-start" isOpen={open} target="Popover1">
-                                            <PopoverBody><img className="slick-slide-image img-fluid"  src={require(`../../../images/colors/img1.jpg`)} />
+                                            <PopoverBody><img className="slick-slide-image img-fluid" src={require(`../../../images/colors/img1.jpg`)} />
                                             </PopoverBody>
                                         </Popover>
                                     </Col>
