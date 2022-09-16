@@ -5,6 +5,7 @@ import browserHistory from "./History"
 
 import RouteWithLayout from "./RouteWithLayout"
 import PublicMain from "../layouts/Public/Main"
+import PublicMain2 from "../layouts/Public/Main2"
 
 import Home from "../pages/Public/home"
 import Details from "../pages/Public/details"
@@ -25,23 +26,16 @@ const Routes = () => {
                     title='Home'
                 />
                 <RouteWithLayout
-                    component={Details}
-                    exact
-                    layout={PublicMain}
-                    path='/details'
-                    title='Details'
-                />
-                <RouteWithLayout
                     component={Contact}
                     exact
-                    layout={PublicMain}
+                    layout={PublicMain2}
                     path='/contact'
                     title='Contact Us'
                 />
                 <RouteWithLayout
                     component={About}
                     exact
-                    layout={PublicMain}
+                    layout={PublicMain2}
                     path='/about'
                     title='About Us'
                 />

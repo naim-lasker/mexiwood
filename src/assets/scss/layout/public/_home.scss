@@ -1,11 +1,5 @@
 //--------- Start News Area -------------//
 
-.main-carousel {
-  .slick-track {
-    margin: auto !important;
-  }
-}
-
 .slick-slide-image {
   margin: 0 10px !important;
   width: 90%;
@@ -23,7 +17,7 @@
   transition: all 0.3s;
   &:hover {
     text-decoration: none;
-    color: cadetblue  !important;
+    color: cadetblue !important;
   }
   @media only screen and (max-width: 768px) {
     margin: auto !important;
@@ -33,46 +27,9 @@
 .furniture-content {
   font-size: 30px;
   font-weight: 600;
-  font-family: "poppins Pro Bold";
 }
 
-.furniture-img {
-  // background-color: gray;
-  font-size: 20px;
-  width: 80%;
-  border-radius: 50%;
-  border: 1px solid white;
-}
-
-.furniture-text {
-  padding-top: 20px;
-  font-size: 20px;
-  font-family: "poppins Pro Bold";
-  font-weight: bold;
-}
 //----------- End News Area -------------//
-.card-header {
-  background-color: lightgray;
-  cursor: pointer;
-  border-bottom: none;
-}
-
-.card-header.active {
-  background-color: cadetblue ;
-  color: white;
-}
-
-.list {
-  li {
-    font-family: "poppins Pro Regular";
-  }
-  p {
-    font-family: "poppins Pro Regular";
-  }
-  .title {
-    font-family: "poppins Pro Bold";
-  }
-}
 
 .color-item img {
   width: 100%;
@@ -99,47 +56,206 @@
   }
 }
 
-.slider-wrapper {
+//////////////////////////////////////@at-root
+///
+///
+.home-main {
+  padding: 62px 300px 0;
   position: relative;
-  .slide-arrow {
-    position: absolute;
-    bottom: 50%;
-    margin-top: -15px;
+  .card {
+    h4 {
+      font-size: 16px;
+    }
   }
-  .custom-prev {
-    left: -20px;
-    width: 0;
-    position: absolute;
-    bottom: 6%;
-    height: 0;
-    border-left: 0 solid transparent;
-    border-right: 15px solid cadetblue ;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-  }
-  .custom-next {
-    right: -20px;
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: 6%;
-    border-right: 0 solid transparent;
-    border-left: 15px solid cadetblue ;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+  .card-header {
+    background-color: white;
+    cursor: pointer;
+    width: 100%;
+    border-bottom: none;
   }
 
-  button {
-    margin: 0;
-    padding: 0;
-    background: none;
-    border: none;
-    position: absolute;
-    border-radius: 0;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  .card-header.active {
+    background-color: white;
+  }
+  .card-header.title {
+    background-color: white;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    color: #000;
+    font-size: 16px !important;
+  }
+  .circle {
+    h4 {
+      font-size: 16px;
+      padding: 30px 0 20px;
+      font-weight: 500;
+    }
+    .slick-slide-image4 {
+      width: 90px;
+      height: 90px;
+      margin-right: 20px;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      object-fit: contain;
+      &:hover {
+        border: 1px solid #ff6000;
+      }
+    }
+  }
+  .list {
+    h2 {
+      font-weight: bold;
+      font-style: 34px;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    li:before {
+      content: "";
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      -moz-border-radius: 7.5px;
+      -webkit-border-radius: 7.5px;
+      border-radius: 7.5px;
+      margin-right: 10px;
+      background: #d9d9d9;
+    }
+    li {
+      padding-left: 1em;
+      text-indent: -1em;
+      margin-top: 10px;
+    }
+    p {
+    }
+    .title {
+      font-weight: bold;    }
+  }
+  .slick-slider {
+    width: 100%;
+  }
+  .title2 {
+    font-style: 40px;
+    font-weight: 700;
+    padding-bottom: 44px;
+    position: relative;
+    text-align: center;
+    &::after {
+      content: "";
+      height: 5px;
+      position: absolute;
+      bottom: 20px;
+      left: 42%;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      z-index: -1;
+      background: #ff6000;
+      width: 205px;
+      margin: 0 auto;
+    }
+  }
+  .main-carousel {
+    padding-bottom: 80px;
+    .slick-slide {
+      width: 20%;
+    }
+
+    .top-prev {
+      left: -100px;
+      background-color: rgb(236, 249, 255);
+      border: none;
+      width: 50px !important;
+      height: 50px !important;
+      position: absolute;
+      top: 30% !important;
+      border-radius: 100% !important;
+      outline: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .top-next {
+      right: -100px;
+      background-color: rgb(236, 249, 255);
+      border: none;
+      width: 50px !important;
+      height: 50px !important;
+      position: absolute;
+      top: 30% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100% !important;
+      outline: none;
+    }
+  }
+  .top-carousel {
+    background-color: rgb(236, 249, 255);
+    width: 208px;
+    height: 208px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .furniture-img {
+      font-size: 20px;
+      width: 80%;
+      border-radius: 50%;
+      border: 1px solid white;
+    }
+    .furniture-text {
+      margin-top: 20px !important;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  .slick-slide-image1 {
+    border-radius: 10px;
+  }
+  .sec-carousel {
+    width: 90% !important;
+    .slick-slide {
+      width: 120px !important;
+      height: 100px;
+      border-radius: 4px !important;
+    }
+    .slick-slide-image {
+      width: 92.5px;
+      height: 100px;
+      border-radius: 4px !important;
+    }
+    .top-prev2 {
+      left: -30px;
+      background-color: rgb(236, 249, 255);
+      border: none;
+      width: 20px !important;
+      height: 100% !important;
+      position: absolute;
+      top: 0% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // border-radius: 100% !important;
+      outline: none;
+    }
+    .top-next2 {
+      right: -30px;
+      background-color: rgb(236, 249, 255);
+      border: none;
+      width: 20px !important;
+      height: 100% !important;
+      position: absolute;
+      top: 0% !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // border-radius: 100% !important;
+      outline: none;
+    }
   }
 }
-

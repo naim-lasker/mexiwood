@@ -1,40 +1,39 @@
 export const furnitureItems = [
     {
-        catagory: '24-Inch Vanities',
-        img: "/img/fur1.jpg"
+        catagory: ' langmore 60',
+        img: require('../images/svg/ven/ven1.svg')
     },
     {
-        catagory: '30-Inch Vanities',
-        img: "/img/fur2.jpg"
+        catagory: 'Langmore 36',
+        img: require('../images/svg/ven/ven2.svg')
 
     },
     {
-        catagory: '24-Inch Vanities',
-        img: "/img/fur3.jpg"
+        catagory: 'Malibu 36',
+        img: require('../images/svg/ven/ven3.svg')
     },
     {
-        catagory: '30-Inch Vanities',
-        img: "/img/fur8.jpg"
+        catagory: 'Malibu 60',
+        img: require('../images/svg/ven/ven4.svg')
 
     },
     {
-        catagory: '36-Inch Vanities',
-        img: "/img/fur4.jpg"
+        catagory: 'Malibu 60',
+        img: require('../images/svg/ven/ven5.svg')
 
     },
     {
-        catagory: '48-Inch Vanities',
-        img: "/img/fur5.jpg"
+        catagory: 'Prestige 36',
+        img: require('../images/svg/ven/ven1.svg')
 
     },
     {
-        catagory: '48-Inch Vanities',
-        img: "/img/fur6.jpg"
+        catagory: 'Malibu 36',
+        img: require('../images/svg/ven/ven2.svg')
 
     },
     {
-        catagory: '48-Inch Vanities',
-        img: "/img/fur7.jpg"
-
+        catagory: 'Prestige 36',
+        img: require('../images/svg/ven/ven3.svg')
     }
 ]

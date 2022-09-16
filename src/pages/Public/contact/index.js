@@ -18,68 +18,43 @@ const Contact = () => {
 
     return (
         < div className='touch-content'>
-            <BannerAboutUs
-                title="Have Question - Contact us"
-                desc="Excepteur Sint Occaecat Cupidatat Non Proident, Sunt In Coulpa Qui Offical
-                    Modeserunt Mollit Anim Id Est Laborum 20 Years Experience."
-                waterMark="Contact"
-            />
-
             <div className="container ">
 
-                <div className="row mt-5 py-5">
+                <div className="row py-5">
+                    <div className="col-12">
+                        <h2 className='title2'>Get in touch</h2>
+                    </div>
 
                     <div className="col-12 col-md-6 bg">
-
-                        <div className="page-title">
-
-                            <h1>Get in touch</h1>
-
-                            <p>Objectively innovate your empowered manufactured
-                                products whereas parallel platforms for your ideas.</p>
-
-                        </div>
-
-
-                        <div className="row page-content">
-                            <img src={require('../../../images/1.png')}></img>
-                            <p className='mb-0'>Ta-134/A, Gulshan Badda
-                                Link Rd, Dhaka</p>
-                        </div>
-
-
-
-
-                        <div className="row page-content">
-
-                            <img src={require('../../../images/5.png')}></img>
-
-                            <div>
-                                <p className='mb-0'>(+088) 589-8745</p>
-                                <p className='mb-0'> (+088) 222-9999</p>
+                        <img src={require('../../../images/svg/contact.svg')} />
+                        <div className='overlay'></div>
+                    </div>
+                    <div className="col-12 col-md-6 bg contact-form">
+                        <form id="contact-form" method="POST">
+                            <div className="form-group d-flex align-item-center justify-content-between mb-0">
+                                <div>
+                                    <input placeholder='FirstName' type="text" className="form-control" />
+                                </div>
+                                <div>
+                                    <input placeholder='LastName' type="text" className="form-control" />
+                                </div>
                             </div>
-
-
-                        </div>
-
-
-
-                        <div className="row page-content">
-
-                            <img src={require('../../../images/6.png')}></img>
-                            <div>
-                                <p className='mb-0'>support@rstheme.com</p>
-                                <p className='mb-0'> info@codesless.com</p>
+                            <div className="form-group">
+                                <input type="email" placeholder='Email address' className="form-control" aria-describedby="emailHelp" />
                             </div>
-                        </div>
+                            <div className="form-group">
+                                <textarea className="form-control" placeholder='Message' rows="5" />
+                            </div>
+                        </form>
+                        <button type="submit" className="btn btn-send">SEND</button>
                     </div>
 
 
 
 
-                    <div className="col-12 col-md-6 mt-5 mt-md-0">
+                    <div className="col-12 col-md-12 mt-5 mt-md-0">
 
-                        <div style={{ height: '60vh', width: '100%' }}>
+                        <div style={{ height: '365px', width: '100%' }}>
                             <GoogleMapReact
                                 bootstrapURLKeys={{ key: "" }}
                                 defaultCenter={defaultProps.center}

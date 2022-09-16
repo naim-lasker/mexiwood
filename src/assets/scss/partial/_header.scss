@@ -3,6 +3,9 @@
 --------------------------------------------------------------*/
 
 .navbar-custom {
+    .header2{
+        border-bottom: 1px solid white;
+    }
     position: relative;
     height: 500px;
     width: 100%;
@@ -28,7 +31,7 @@
     }
     .video video {
         object-fit: cover;
-        width: 100vw;
+        width: 99vw;
         height: 500px;
         position: absolute;
         top: 0;
@@ -42,6 +45,18 @@
     .link-content {
         border-bottom: 1px solid #ededed;
         border-top: 1px solid #ededed;
+        padding: 24px;
+        .nav-link {
+            color: white;
+            font-weight: 500;
+            padding-right: 24px;
+            font-size: 16px;
+            &:hover {
+                color: #ff6000;
+            }
+        }
+    }
+    .link-content2 {
         padding: 24px;
         .nav-link {
             color: white;
@@ -101,3 +116,110 @@
 /*--------------------------------------------------------------
 # End Header Styles
 --------------------------------------------------------------*/
+.navbar-custom2 {
+    .header2{
+        border-bottom: 1px solid white;
+    }
+    position: relative;
+    height: 200px;
+    width: 100%;
+    padding: 0 !important;
+    .content {
+        position: absolute;
+        top: 0;
+        padding: 0 100px;
+        @media only screen and (max-width: 992px) {
+            padding: 0 30px;
+        }
+    }
+    .overlay {
+        background-color: #333333 !important;
+        top: 0;
+        opacity: 0.8;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+    .video video {
+        object-fit: cover;
+        width: 99vw;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        filter: grayscale(100%);
+    }
+    .link-content {
+        border-bottom: 1px solid #ededed;
+        border-top: 1px solid #ededed;
+        padding: 24px;
+        .nav-link {
+            color: white;
+            font-weight: 500;
+            padding-right: 24px;
+            font-size: 16px;
+            &:hover {
+                color: #ff6000;
+            }
+        }
+    }
+    .link-content2 {
+        padding: 24px;
+        .nav-link {
+            color: white;
+            font-weight: 500;
+            padding-right: 24px;
+            font-size: 16px;
+            &:hover {
+                color: #ff6000;
+            }
+        }
+    }
+    .icons {
+        background-color: white;
+        border-radius: 100%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        margin-left: 28px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        @media only screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+    .nav-btn {
+        position:relative;
+        z-index: 199px !important;
+        background-color: white;
+        left: 0%;
+    }
+    .btn-content {
+        background: #ff6000;
+        border-radius: 4px;
+        margin-top: 40px;
+        width: 229px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .title{
+        font-size: 80px;
+        font-weight: 700;
+        color: white;
+        margin-top: 30px;
+        text-transform: uppercase;
+        @media only screen and (max-width: 992px) {
+            font-size: 40px;
+        }
+        @media only screen and (max-width: 575px) {
+            font-size: 20px;
+        }
+    }
+}
