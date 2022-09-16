@@ -32,15 +32,15 @@ const Header = () => {
                 </Col>
                 <Col xs={4} lg={6} className="d-flex flex-column align-items-end justify-content-center">
                     <ul className="navbar-nav sm-icons">
-                        <div className='icons'>
+                        <a className='icons'>
                             <img src={fb} />
-                        </div>
-                        <div className='icons'>
+                        </a>
+                        <a className='icons'>
                             <img src={insta} />
-                        </div>
-                        <div className='icons'>
+                        </a>
+                        <a className='icons'>
                             <img src={twitter} />
-                        </div>
+                        </a>
                     </ul>
                 </Col>
                 <Col xs={4} className="d-flex flex-column align-items-end justify-content-center">

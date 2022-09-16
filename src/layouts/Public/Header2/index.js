@@ -24,16 +24,13 @@ const Header2 = () => {
             </div>
             <div className='overlay'></div>
             <Row className='w-100 justify-content-between content header2'>
-                <Col xs={3} md={6}>
+                <Col xs={3} lg={6}>
                     <Navbar.Brand href="/">
                         <img style={{ width: 200, height: 120 }} src={logo}></img>
                     </Navbar.Brand>
 
                 </Col>
-
-
-
-                <Col xs={3} md={6} className="d-flex flex-column align-items-end justify-content-center">
+                <Col xs={3} lg={6} className="d-flex flex-column align-items-end justify-content-center">
                     <ul className="navbar-nav sm-icons">
                         <div className='icons'>
                             <img src={fb} />
@@ -46,10 +43,7 @@ const Header2 = () => {
                         </div>
                     </ul>
                 </Col>
-                <Col xs={3} className="d-flex flex-column align-items-center justify-content-center">
-                    <Navbar.Toggle className='ml-5 mt-2 mt-lg-2 nav-btn' aria-controls="basic-navbar-nav" />
-                </Col>
-                <Col xs={12} md={12}>
+                <Col xs={3} lg={12}>
                     <div className='link-content2 d-flex flex-column align-items-center justify-content-center'>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
@@ -64,6 +58,10 @@ const Header2 = () => {
                     </div>
 
                 </Col>
+                <Col xs={3} className="d-flex flex-column align-items-center justify-content-center">
+                    <Navbar.Toggle className='ml-5 mt-2 mt-lg-2 nav-btn' aria-controls="basic-navbar-nav" />
+                </Col>
+                
             </Row>
 
 

@@ -1,6 +1,29 @@
 .touch-content {
     .bg {
         position: relative;
+        border-radius: 10px;
+        width: 90% !important;
+        border-radius: 10px;
+        height: 90%;
+        @media only screen and (max-width: 768px) {
+            width: 100% !important;
+            border-radius: 10px;
+            height: 100%;
+        }
+        .bg-img {
+            width: 100% !important;
+            border-radius: 10px;
+            height: 100%;
+            object-fit: cover;
+        }
+        .right {
+            position: absolute;
+            bottom: -20%;
+            right: 5%;
+            @media only screen and (max-width: 992px) {
+                display: none;
+            }
+        }
         .overlay {
             background-color: #333333 !important;
             top: 0;
@@ -8,22 +31,67 @@
             left: 0;
             right: 0;
             bottom: 0;
+            border-radius: 10px;
             position: absolute;
         }
-        .right{
-            position: absolute;
-            bottom:-20%;
-            right:5%
+    }
+    .c-content {
+        position: absolute;
+        z-index: 99;
+        padding: 50px;
+        top: 0;
+        .page-content {
+            @media only screen and (max-width: 768px) {
+                margin-top: 30px;
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            padding: 20px;
+        }
+        @media only screen and (max-width: 768px) {
+            padding: 40px;
+        }
+        .info {
+            background-color: #ff6000;
+            border-radius: 100%;
+            width: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 56px;
+            margin: 10px;
+            @media only screen and (max-width: 992px) {
+                width: 26px;
+                height: 26px;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+                @media only screen and (max-width: 768px) {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        p {
+            color: white;
+            font-size: 16px;
+            @media only screen and (max-width: 992px) {
+                font-size: 14px;
+            }
+            @media only screen and (max-width: 768px) {
+                font-size: 16px;
+            }
         }
     }
 
-    .about{
-        h2{
+    .about {
+        h2 {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 30px;
         }
-        p{
+        p {
             font-size: 16px;
         }
     }
@@ -33,6 +101,7 @@
         padding-bottom: 44px;
         position: relative;
         text-align: center;
+        text-transform: uppercase;
         &::after {
             content: "";
             height: 5px;
@@ -48,6 +117,10 @@
         }
     }
     .contact-form {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
         .form-control {
             border: 1px solid #ededed;
             border-radius: 4px;
@@ -125,23 +198,7 @@
     margin-bottom: 30px;
 }
 
-.page-content {
-    padding-left: 20px;
-    display: flex;
-    margin-top: 50px;
-    align-items: center;
-    img {
-        width: 50px;
-        margin-right: 20px;
-    }
-}
 
-.page-content p {
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: 100;
-    max-width: 200px;
-}
 
 .bg-footer {
     width: 100%;
