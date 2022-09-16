@@ -30,7 +30,7 @@ const Home = () => {
         slidesToScroll: 2,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1192,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
@@ -39,7 +39,7 @@ const Home = () => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -47,7 +47,7 @@ const Home = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
