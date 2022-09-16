@@ -3,13 +3,16 @@
 --------------------------------------------------------------*/
 
 .navbar-custom {
-    .header2{
+    .header2 {
         border-bottom: 1px solid white;
     }
     position: relative;
     height: 500px;
     width: 100%;
     padding: 0 !important;
+    @media only screen and (max-width: 575px) {
+        height: 350px;
+    }
     .content {
         position: absolute;
         top: 0;
@@ -28,6 +31,10 @@
         border-bottom-left-radius: 60%;
         border-bottom-right-radius: 60%;
         position: absolute;
+        @media only screen and (max-width: 575px) {
+            border-bottom-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+        }
     }
     .video video {
         object-fit: cover;
@@ -41,6 +48,16 @@
         filter: grayscale(1);
         -webkit-filter: grayscale(1);
         filter: grayscale(100%);
+        @media only screen and (max-width: 1192px) {
+            width: 100vw;
+        }
+        @media only screen and (max-width: 575px) {
+            height: 350px;
+        }
+        @media only screen and (max-width: 575px) {
+            border-bottom-left-radius: 40%;
+            border-bottom-right-radius: 40%;
+        }
     }
     .link-content {
         border-bottom: 1px solid #ededed;
@@ -83,7 +100,7 @@
         }
     }
     .nav-btn {
-        position:relative;
+        position: relative;
         z-index: 199px !important;
         background-color: white;
         left: 0%;
@@ -99,12 +116,15 @@
         justify-content: center;
         color: white;
     }
-    .title{
+    .title {
         font-size: 80px;
         font-weight: 700;
         color: white;
         margin-top: 30px;
         text-transform: uppercase;
+        @media only screen and (max-width: 1192px) {
+            font-size: 50px;
+        }
         @media only screen and (max-width: 992px) {
             font-size: 40px;
         }
@@ -117,7 +137,7 @@
 # End Header Styles
 --------------------------------------------------------------*/
 .navbar-custom2 {
-    .header2{
+    .header2 {
         border-bottom: 1px solid white;
     }
     position: relative;
@@ -143,7 +163,7 @@
     }
     .video video {
         object-fit: cover;
-        width: 99vw;
+        width: 100vw;
         height: 200px;
         position: absolute;
         top: 0;
@@ -151,6 +171,9 @@
         filter: grayscale(1);
         -webkit-filter: grayscale(1);
         filter: grayscale(100%);
+        @media only screen and (max-width: 1024px) {
+            width: 100vw;
+        }
     }
     .link-content {
         border-bottom: 1px solid #ededed;
@@ -167,7 +190,8 @@
         }
     }
     .link-content2 {
-        padding: 24px;
+        padding: 14px;
+        border-top: 1px solid #ededed;
         .nav-link {
             color: white;
             font-weight: 500;
@@ -193,7 +217,7 @@
         }
     }
     .nav-btn {
-        position:relative;
+        position: relative;
         z-index: 199px !important;
         background-color: white;
         left: 0%;
@@ -209,7 +233,7 @@
         justify-content: center;
         color: white;
     }
-    .title{
+    .title {
         font-size: 80px;
         font-weight: 700;
         color: white;

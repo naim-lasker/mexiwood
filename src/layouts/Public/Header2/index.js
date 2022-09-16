@@ -24,30 +24,16 @@ const Header2 = () => {
             </div>
             <div className='overlay'></div>
             <Row className='w-100 justify-content-between content header2'>
-                <Col xs={3} md={4}>
+                <Col xs={3} md={6}>
                     <Navbar.Brand href="/">
                         <img style={{ width: 200, height: 120 }} src={logo}></img>
                     </Navbar.Brand>
 
                 </Col>
-                
-                <Col xs={3} md={4}>
-                    <div className='link-content2 d-flex flex-column align-items-center justify-content-center'>
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
 
-                                <Nav.Link href="/">Home</Nav.Link>
-                                {/* <Nav.Link>Living</Nav.Link>
-                                <Nav.Link>Furniture</Nav.Link> */}
-                                <Nav.Link href="/contact">Contact</Nav.Link>
-                                <Nav.Link href="/about">About us</Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
-                    </div>
 
-                </Col>
-               
-                <Col xs={3} md={4} className="d-flex flex-column align-items-end justify-content-center">
+
+                <Col xs={3} md={6} className="d-flex flex-column align-items-end justify-content-center">
                     <ul className="navbar-nav sm-icons">
                         <div className='icons'>
                             <img src={fb} />
@@ -62,6 +48,21 @@ const Header2 = () => {
                 </Col>
                 <Col xs={3} className="d-flex flex-column align-items-center justify-content-center">
                     <Navbar.Toggle className='ml-5 mt-2 mt-lg-2 nav-btn' aria-controls="basic-navbar-nav" />
+                </Col>
+                <Col xs={12} md={12}>
+                    <div className='link-content2 d-flex flex-column align-items-center justify-content-center'>
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="me-auto">
+
+                                <Nav.Link href="/">Home</Nav.Link>
+                                {/* <Nav.Link>Living</Nav.Link>
+                                <Nav.Link>Furniture</Nav.Link> */}
+                                <Nav.Link href="/contact">Contact</Nav.Link>
+                                <Nav.Link href="/about">About us</Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </div>
+
                 </Col>
             </Row>
 

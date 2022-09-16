@@ -41,8 +41,8 @@ const Home = () => {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
+                    slidesToShow: 3,
+                    slidesToScroll: 2,
                     initialSlide: 1
                 }
             },
@@ -82,14 +82,15 @@ const Home = () => {
     }
 
     const settingsThumbs = {
-        slidesToShow: 4,
-        infinite: true,
+        slidesToShow: slidesData.length > 4 ? 4 : slidesData.length,
+        infinite: slidesData.length > 4,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         centerMode: true,
         swipeToSlide: true,
+        adaptiveHeight: true,
         focusOnSelect: true,
-        centerPadding: '0px',
+        centerPadding: '20px',
         nextArrow: <SampleNextArrow2 />,
         prevArrow: <SamplePrevArrow2 />,
     }
@@ -227,7 +228,7 @@ const Home = () => {
                                 )}
                             </Slider>
 
-                            <div className="thumbnail-slider-wrap mt-2 sec-carousel">
+                            <div className="thumbnail-slider-wrap mt-3 sec-carousel">
                                 <Slider
                                     {...settingsThumbs}
                                     asNavFor={nav1}
@@ -236,7 +237,7 @@ const Home = () => {
                                     {slidesData.map((slide) =>
 
                                         <div className="slick-slide" key={slide.id}>
-                                            <img onClick={() => resetColor(slide.id)} className="slick-slide-image img-fluid"
+                                            <img onClick={() => resetColor(slide.id)} className="slick-slide-image"
                                                 src={require(`../../../images/soho_36/angle${slide.id}_${currentColor}.jpg`)} />
                                         </div>
 
@@ -247,47 +248,46 @@ const Home = () => {
                         </div>
                     </Col>
 
-                    <Col xs={12} md={6} className="mt-4 mt-md-0 color-item">
+                    <Col xs={12} md={6} className="mt-4 mt-md-0 color-item  ">
+                        <Row className=' circle'>
+                            <Col xs={{span:12, order:2}} md={{span:12, order:1}}>
+                                <div className='list mt-5 mt-md-0'>
+                                    <h2>Langmore 60</h2>
+                                    <ul className='pt-2'>
 
-                        <div className='list'>
-                            <h2>Langmore 60</h2>
-                            <ul className='pt-2'>
+                                        <li>Light Gray Finish</li>
 
-                                <li>Light Gray Finish</li>
+                                        <li>Brushed nickel finish hardware</li>
 
-                                <li>Brushed nickel finish hardware</li>
+                                        <li>2 soft-close doors</li>
 
-                                <li>2 soft-close doors</li>
+                                        <li>Natural 1 in.carrara white marble countertop and backsplash</li>
 
-                                <li>Natural 1 in.carrara white marble countertop and backsplash</li>
+                                        <li>Top pre-drilled for 8 in. Widespread faucet</li>
 
-                                <li>Top pre-drilled for 8 in. Widespread faucet</li>
+                                        <li>White vitreous china rectangular undermount sink</li>
 
-                                <li>White vitreous china rectangular undermount sink</li>
+                                        <li>Adjustable height levelers</li>
 
-                                <li>Adjustable height levelers</li>
+                                        <li>Faucet not included</li>
 
-                                <li>Faucet not included</li>
+                                        <li>Hardware color: Brushed Nickel</li>
 
-                                <li>Hardware color: Brushed Nickel</li>
+                                        <li>Primary Wood: Poplar and Secondary Wood:MDF</li>
 
-                                <li>Primary Wood: Poplar and Secondary Wood:MDF</li>
+                                        <li>Shape:Rectangular</li>
 
-                                <li>Shape:Rectangular</li>
+                                        <li>Number of Doors:2</li>
 
-                                <li>Number of Doors:2</li>
+                                        <li>Number of Shelves:1</li>
 
-                                <li>Number of Shelves:1</li>
+                                        <li>Vanity Cabinet Size:37-Inch</li>
+                                    </ul>
 
-                                <li>Vanity Cabinet Size:37-Inch</li>
-                            </ul>
-
-                        </div>
-                        <Row className='pl-2 circle'>
-                            <Col xs={12}>
-                                <h4>Finish Options</h4>
+                                </div>
                             </Col>
-                            <Col xs={12}>
+                            <Col xs={{span:12, order:1}} md={{span:12, order:1}}>
+                                <h4>Finish Options</h4>
                                 <img id="Popover1" onMouseEnter={onHover} onMouseLeave={onHoverLeave} className="slick-slide-image4" onClick={() => testImage('cream')} src={require(`../../../images/svg/ven/circle1.svg`)} />
                                 <img id="Popover2" className="slick-slide-image4" onMouseEnter={onHover2} onMouseLeave={onHoverLeave2} onClick={() => testImage('gray')} src={require(`../../../images/svg/ven/circle2.svg`)} />
                                 <img id="Popover3" className="slick-slide-image4" onMouseEnter={onHover3} onMouseLeave={onHoverLeave3} onClick={() => testImage('white')} src={require(`../../../images/svg/ven/circle3.png`)} />

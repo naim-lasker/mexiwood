@@ -46,19 +46,19 @@ const Header = () => {
                 <Col xs={4} className="d-flex flex-column align-items-end justify-content-center">
                     <Navbar.Toggle className='ml-5 mt-2 mt-lg-2 nav-btn' aria-controls="basic-navbar-nav" />
                 </Col>
-                <Col xs={12} className="">
-                    <div className='link-content  d-flex flex-column align-items-center justify-content-center'>
-                        <Navbar.Collapse id="basic-navbar-nav">
+                
+                <Col xs={12} className="w-100">
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <div className='link-content w-100 d-flex flex-column align-items-center justify-content-center'>
                             <Nav className="me-auto">
-
                                 <Nav.Link href="/">Home</Nav.Link>
                                 {/* <Nav.Link>Living</Nav.Link>
                                 <Nav.Link>Furniture</Nav.Link> */}
                                 <Nav.Link href="/contact">Contact</Nav.Link>
                                 <Nav.Link href="/about">About us</Nav.Link>
                             </Nav>
-                        </Navbar.Collapse>
-                    </div>
+                        </div>
+                    </Navbar.Collapse>
                 </Col>
                 <Col xs={12} className="d-flex flex-column align-items-center justify-content-center">
                     <button className='btn btn-content'>
@@ -67,8 +67,6 @@ const Header = () => {
                     <h1 className='title'>Bathroom Vanities</h1>
                 </Col>
             </Row>
-
-
         </Navbar>
     )
 }
