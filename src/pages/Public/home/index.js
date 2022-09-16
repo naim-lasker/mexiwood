@@ -287,7 +287,7 @@ const Home = () => {
 
                                 </div>
                             </Col>
-                            <Col xs={{span:12, order:1}} md={{span:12, order:1}} className="three-img d-flex flex-row align-items-center justify-content-center">
+                            <Col xs={{span:12, order:1}} md={{span:12, order:1}} className="three-img d-flex flex-row align-items-center align-items-md-start  justify-content-center justify-content-md-start">
                                 <img id="Popover1" onMouseEnter={onHover} onMouseLeave={onHoverLeave} className="slick-slide-image4" onClick={() => testImage('cream')} src={require(`../../../images/svg/ven/circle1.svg`)} />
                                 <img id="Popover2" className="slick-slide-image4" onMouseEnter={onHover2} onMouseLeave={onHoverLeave2} onClick={() => testImage('gray')} src={require(`../../../images/svg/ven/circle2.svg`)} />
                                 <img id="Popover3" className="slick-slide-image4" onMouseEnter={onHover3} onMouseLeave={onHoverLeave3} onClick={() => testImage('white')} src={require(`../../../images/svg/ven/circle3.png`)} />
