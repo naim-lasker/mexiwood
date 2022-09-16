@@ -1,28 +1,5 @@
 //--------- Start News Area -------------//
-.video {
-  position: relative;
-  height: 70vh;
-}
-// .overlay {
-//   // background-color: grey;
-//   top: 0;
-//   opacity: 0.8;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   position: absolute;
-// }
-.video video {
-  object-fit: cover;
-  width: 99vw;
-  height: 70vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1); 
-  filter: grayscale(100%); 
-}
+
 .main-carousel {
   .slick-track {
     margin: auto !important;

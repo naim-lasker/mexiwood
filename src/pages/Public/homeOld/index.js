@@ -11,9 +11,11 @@ import { Popover, PopoverBody } from 'reactstrap';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 
-const Home = () => {
+const HomeOld = () => {
 
+    const vidRef = useRef();
 
+    useEffect(() => { vidRef.current.play(); }, []);
     const [open, setOpen] = useState(false)
     const [open2, setOpen2] = useState(false)
     const [open3, setOpen3] = useState(false)
@@ -152,7 +154,7 @@ const Home = () => {
 
 
 
-            {/* <section style={{ backgroundColor: 'rgb(247, 247, 247)' }}>
+            <section style={{ backgroundColor: 'rgb(247, 247, 247)' }}>
                 <div className="pl-5 pt-5 mt-2">
                     <h2 className="furniture-content text-center text-md-left">Bathroom Vanities</h2>
                 </div>
@@ -169,6 +171,7 @@ const Home = () => {
                 </div>
 
                 <div className="pt-5 pl-5">
+                    {/* <Container fluid className='pt-5'> */}
                     <Row>
                         <Col xs={12} md={6}>
                             <div className="slider-wrapper">
@@ -404,12 +407,18 @@ const Home = () => {
                                 </div>
                         </Col>
                     </Row>
+                    {/* </Container> */}
 
                 </div>
-              
-            </section> */}
+                <div className="video">
+                    <video ref={vidRef} autoPlay muted loop>
+                        <source src="https://mexiwood.mx/images/videos/plywood-vid-3.mp4" type="video/mp4"></source>
+                    </video>
+                    <div className='overlay'></div>
+                </div>
+            </section>
         </>
     )
 }
 
-export default Home
+export default HomeOld
