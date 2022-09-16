@@ -11,7 +11,7 @@ const About = () => {
     return (
         <>
             < div className='touch-content'>
-                <div className="container">
+                <div className="container py-5 mb-5">
 
                     <div className="row py-5 mb-5">
                         <div className="col-12">

@@ -3,6 +3,18 @@
 --------------------------------------------------------------*/
 
 .navbar-custom {
+    .logo {
+        width: 200px;
+        height: 120px;
+        @media only screen and (max-width: 992px) {
+            width: 140px;
+            height: 100px;
+        }
+        @media only screen and (max-width: 575px) {
+            width: 100px;
+            height: 80px;
+        }
+    }
     .header2 {
         border-bottom: 1px solid white;
     }
@@ -12,6 +24,29 @@
     padding: 0 !important;
     @media only screen and (max-width: 575px) {
         height: 350px;
+    }
+    @media only screen and (max-width: 480px) {
+        height: 300px;
+    }
+    .expan {
+        @media only screen and (max-width: 992px) {
+            background-color: #333333;
+            width: 80% !important;
+            top: 37%;
+            left: 14%;
+            border-radius: 10px;
+            z-index: 99;
+            position: absolute;
+        }
+        @media only screen and (max-width: 768px) {
+            background-color: #333333;
+            width: 60% !important;
+            top: 37%;
+            left: 14%;
+            border-radius: 10px;
+            z-index: 99;
+            position: absolute;
+        }
     }
     .content {
         position: absolute;
@@ -54,18 +89,25 @@
         @media only screen and (max-width: 575px) {
             height: 350px;
         }
+        @media only screen and (max-width: 480px) {
+            height: 300px;
+        }
         @media only screen and (max-width: 575px) {
-            border-bottom-left-radius: 40%;
-            border-bottom-right-radius: 40%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
         }
     }
     .link-content {
         border-bottom: 1px solid #ededed;
         border-top: 1px solid #ededed;
         padding: 24px;
+        .active {
+            color: #ff6000 !important;
+        }
         .nav-link {
             color: white;
             font-weight: 500;
+            font-family: 'Poppins', sans-serif;
             padding-right: 24px;
             font-size: 16px;
             &:hover {
@@ -75,11 +117,15 @@
     }
     .link-content2 {
         padding: 24px;
+        .active {
+            color: #ff6000 !important;
+        }
         .nav-link {
             color: white;
             font-weight: 500;
             padding-right: 24px;
             font-size: 16px;
+            font-family: 'Poppins', sans-serif;
             &:hover {
                 color: #ff6000;
             }
@@ -116,12 +162,17 @@
         align-items: center;
         justify-content: center;
         color: white;
+        font-family: 'Poppins', sans-serif;
+        &:hover {
+            background-color: rgb(201, 67, 0);
+        }
     }
     .title {
         font-size: 80px;
         font-weight: 700;
         color: white;
         margin-top: 30px;
+        font-family: 'Poppins', sans-serif;
         text-transform: uppercase;
         @media only screen and (max-width: 1192px) {
             font-size: 50px;
@@ -138,6 +189,19 @@
 # End Header Styles
 --------------------------------------------------------------*/
 .navbar-custom2 {
+    
+    .logo {
+        width: 200px;
+        height: 120px;
+        @media only screen and (max-width: 992px) {
+            width: 140px;
+            height: 100px;
+        }
+        @media only screen and (max-width: 575px) {
+            width: 100px;
+            height: 80px;
+        }
+    }
     .header2 {
         border-bottom: 1px solid white;
     }
@@ -151,6 +215,26 @@
         padding: 0 100px;
         @media only screen and (max-width: 992px) {
             padding: 0 30px;
+        }
+    }
+    .expan {
+        @media only screen and (max-width: 992px) {
+            background-color: #333333;
+            width: 80% !important;
+            top: 18%;
+            left: 4%;
+            border-radius: 10px;
+            z-index: 99;
+            position: absolute;
+        }
+        @media only screen and (max-width: 768px) {
+            background-color: #333333;
+            width: 60% !important;
+            top: 14%;
+            left: 14%;
+            border-radius: 10px;
+            z-index: 99;
+            position: absolute;
         }
     }
     .overlay {
@@ -193,11 +277,15 @@
     .link-content2 {
         padding: 14px;
         border-top: 1px solid #ededed;
+        .active {
+            color: #ff6000 !important;
+        }
         .nav-link {
             color: white;
             font-weight: 500;
             padding-right: 24px;
             font-size: 16px;
+            font-family: 'Poppins', sans-serif;
             &:hover {
                 color: #ff6000;
             }

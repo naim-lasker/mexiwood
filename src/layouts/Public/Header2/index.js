@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Col, Row } from 'react-bootstrap';
@@ -6,12 +6,18 @@ import fb from '../../../images/svg/facebook.svg'
 import insta from '../../../images/svg/insta.svg'
 import twitter from '../../../images/svg/twitter.svg'
 import logo from '../../../images/svg/logo.svg'
+import { useLocation } from 'react-router-dom';
 
 const Header2 = () => {
 
 
     const vidRef = useRef();
     useEffect(() => { vidRef.current.play(); }, []);
+    const location = useLocation(); // once ready it returns the 'window.location' object
+    const [url, setUrl] = useState(null);
+    useEffect(() => {
+      setUrl(location.pathname);
+    }, [location]);
 
 
     return (
@@ -26,7 +32,7 @@ const Header2 = () => {
             <Row className='w-100 justify-content-between content header2'>
                 <Col xs={3} lg={6}>
                     <Navbar.Brand href="/">
-                        <img style={{ width: 200, height: 120 }} src={logo}></img>
+                        <img className='logo' src={logo}></img>
                     </Navbar.Brand>
 
                 </Col>
@@ -43,25 +49,25 @@ const Header2 = () => {
                         </div>
                     </ul>
                 </Col>
-                <Col xs={3} lg={12}>
-                    <div className='link-content2 d-flex flex-column align-items-center justify-content-center'>
-                        <Navbar.Collapse id="basic-navbar-nav">
+                <Col xs={12} lg={12} className="expan w-100">
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <div className='link-content2 w-100 d-flex flex-column align-items-center justify-content-center'>
                             <Nav className="me-auto">
 
-                                <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link className={(url === "/" ?" active" : "")} href="/">Home</Nav.Link>
                                 {/* <Nav.Link>Living</Nav.Link>
                                 <Nav.Link>Furniture</Nav.Link> */}
-                                <Nav.Link href="/contact">Contact</Nav.Link>
-                                <Nav.Link href="/about">About us</Nav.Link>
+                                <Nav.Link href="/contact" className={(url === "/contact" ?" active" : "")}>Contact</Nav.Link>
+                                <Nav.Link href="/about" className={(url === "/about" ?" active" : "")}>About us</Nav.Link>
                             </Nav>
-                        </Navbar.Collapse>
-                    </div>
+                        </div>
+                    </Navbar.Collapse>
 
                 </Col>
                 <Col xs={3} className="d-flex flex-column align-items-center justify-content-center">
                     <Navbar.Toggle className='ml-5 mt-2 mt-lg-2 nav-btn' aria-controls="basic-navbar-nav" />
                 </Col>
-                
+
             </Row>
 
 

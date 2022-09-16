@@ -65,17 +65,27 @@
   @media only screen and (max-width: 1444px) {
     padding: 62px 50px 0;
   }
+  @media only screen and (max-width: 575px) {
+    padding: 10px 20px;
+  }
   .card {
     h4 {
       font-size: 16px;
       margin-bottom: 0 !important;
+      font-family: 'Poppins', sans-serif;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 0 !important;
+      font-family: 'Poppins', sans-serif;
     }
   }
   .card-header {
     background-color: white;
     cursor: pointer;
     width: 100%;
-    border-bottom: none;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed !important;
   }
 
   .card-header.active {
@@ -83,8 +93,9 @@
   }
   .card-header.title {
     background-color: white;
-    border-top: 1px solid #ededed;
-    border-bottom: 1px solid #ededed;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+   
     color: #000;
     font-size: 16px !important;
   }
@@ -106,20 +117,26 @@
       &:hover {
         border: 1px solid #ff6000;
       }
+      @media only screen and (max-width: 575px) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
   .list {
     h2 {
-      font-weight: bold;
+      font-weight: 600;
       font-style: 34px;
+      font-family: 'Poppins', sans-serif;
     }
     ul {
       list-style: none;
       margin-left: 0;
+      font-weight: 400;
       padding-left: 0;
+      font-family: 'Poppins', sans-serif;
     }
     li:before {
-      content: "";
       content: "";
       display: inline-block;
       width: 12px;
@@ -145,11 +162,12 @@
     width: 100%;
   }
   .title2 {
-    font-style: 40px;
+    font-size: 40px;
     font-weight: 700;
     padding-bottom: 44px;
     position: relative;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
     &::after {
       content: "";
       height: 5px;
@@ -162,6 +180,10 @@
       background: #ff6000;
       width: 205px;
       margin: 0 auto;
+      @media only screen and (max-width: 992px) {
+        left: 38%;
+        // width: 105px;
+      }
       @media only screen and (max-width: 768px) {
         left: 38%;
         width: 105px;
@@ -227,6 +249,14 @@
       }
     }
   }
+  .slick-dots-custom{
+    position:absolute;
+    bottom:30px;
+  }
+  .slick-dots li.slick-active button:before {
+    color:orange !important;
+}
+ 
   .three-img{
     h4{
       font-weight: bold;
@@ -249,7 +279,8 @@
     .furniture-text {
       margin-top: 20px !important;
       font-size: 18px;
-      font-weight: bold;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
       text-align: center;
     }
   }

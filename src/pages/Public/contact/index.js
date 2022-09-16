@@ -25,7 +25,7 @@ const Contact = () => {
                         <h2 className='title2'>Get in touch</h2>
                     </div>
 
-                    <div className="col-12 col-md-6 ">
+                    <div className="col-12 col-md-5 ">
                         <div className='bg'>
                             <img className='bg-img' src={require('../../../images/svg/contact.svg')} />
                             <div className="c-content">
@@ -37,8 +37,10 @@ const Contact = () => {
                                     <div className='info'>
                                         <img src={require('../../../images/svg/loc.svg')}></img>
                                     </div>
-                                    <p className='mb-0'>Ta-134/A, Gulshan Badda
-                                        Link Rd, Dhaka</p>
+                                    <div>
+                                        <p className='mb-0'>Ta-134/A, Gulshan Badda</p>
+                                        <p className='mb-0'>Link Rd, Dhaka</p>
+                                    </div>
                                 </div>
                                 <div className="row page-content">
                                     <div className='info'>
@@ -62,7 +64,7 @@ const Contact = () => {
                             <div className='overlay'></div>
                         </div>
                     </div>
-                    <div className="col-12 col-md-6 contact-form mt-5 mt-md-0">
+                    <div className="col-12 col-md-7 contact-form mt-5 mt-md-0">
                         <form id="contact-form" method="POST">
                             <div className="form-group d-flex align-item-center justify-content-between mb-0">
                                 <input placeholder='FirstName' type="text" className="form-control mr-3" />

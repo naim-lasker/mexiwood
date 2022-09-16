@@ -2,7 +2,7 @@
     .bg {
         position: relative;
         border-radius: 10px;
-        width: 90% !important;
+        width: 100% !important;
         border-radius: 10px;
         height: 90%;
         @media only screen and (max-width: 768px) {
@@ -76,6 +76,7 @@
         p {
             color: white;
             font-size: 16px;
+            font-family: 'Poppins', sans-serif;
             @media only screen and (max-width: 992px) {
                 font-size: 14px;
             }
@@ -90,23 +91,26 @@
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 30px;
+            font-family: 'Poppins', sans-serif;
         }
         p {
             font-size: 16px;
+            font-family: 'Poppins', sans-serif;
         }
     }
     .title2 {
         font-style: 40px;
         font-weight: 700;
-        padding-bottom: 44px;
+        margin-bottom: 84px;
         position: relative;
         text-align: center;
         text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
         &::after {
             content: "";
             height: 5px;
             position: absolute;
-            bottom: 20px;
+            bottom: -10px;
             left: 45%;
             -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
@@ -114,6 +118,9 @@
             background: #ff6000;
             width: 100px;
             margin: 0 auto;
+            @media only screen and (max-width: 768px) {
+                left: 40%;
+            }
         }
     }
     .contact-form {
@@ -124,6 +131,7 @@
         .form-control {
             border: 1px solid #ededed;
             border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
             margin-bottom: 30px;
         }
     }
@@ -132,6 +140,7 @@
         border-radius: 4px;
         height: 48px;
         width: 100%;
+        font-family: 'Poppins', sans-serif;
         color: white;
     }
 }

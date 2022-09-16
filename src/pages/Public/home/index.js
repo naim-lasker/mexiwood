@@ -21,9 +21,10 @@ const Home = () => {
     const [open3, setOpen3] = useState(false)
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
+        dotsClass: "slick-dots slick-dots-custom",
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         slidesToShow: 5,
@@ -208,7 +209,7 @@ const Home = () => {
                         )}
                     </Slider>
                 </div>
-                <Row>
+                <Row className='pt-4'>
                     <Col xs={12} md={6} className="mx-auto">
                         <div className="slider-wrapper d-flex flex-column align-items-center">
                             <Slider
@@ -286,8 +287,7 @@ const Home = () => {
 
                                 </div>
                             </Col>
-                            <Col xs={{span:12, order:1}} md={{span:12, order:1}} className="three-img">
-                                <h4>Finish Options</h4>
+                            <Col xs={{span:12, order:1}} md={{span:12, order:1}} className="three-img d-flex flex-row align-items-center justify-content-center">
                                 <img id="Popover1" onMouseEnter={onHover} onMouseLeave={onHoverLeave} className="slick-slide-image4" onClick={() => testImage('cream')} src={require(`../../../images/svg/ven/circle1.svg`)} />
                                 <img id="Popover2" className="slick-slide-image4" onMouseEnter={onHover2} onMouseLeave={onHoverLeave2} onClick={() => testImage('gray')} src={require(`../../../images/svg/ven/circle2.svg`)} />
                                 <img id="Popover3" className="slick-slide-image4" onMouseEnter={onHover3} onMouseLeave={onHoverLeave3} onClick={() => testImage('white')} src={require(`../../../images/svg/ven/circle3.png`)} />
@@ -367,7 +367,7 @@ const Home = () => {
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
-                                    <Card className="rounded-lg border-0">
+                                    <Card className="rounded-lg border-0 mb-3">
                                         <Accordion.Toggle
                                             as={Card.Header}
                                             eventKey="3"
