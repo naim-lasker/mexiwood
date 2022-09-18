@@ -216,7 +216,7 @@ const Home = () => {
                         )}
                     </Slider>
                 </div>
-                <Row className='pt-4'>
+                <Row className='pt-5'>
                     <Col xs={12} md={6} className="mx-auto">
                         <div className="slider-wrapper d-flex flex-column align-items-center">
                             <Slider

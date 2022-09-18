@@ -62,7 +62,7 @@
 .home-main {
   padding: 62px 300px 0;
   position: relative;
-  .select-img{
+  .select-img {
     cursor: pointer;
   }
   @media only screen and (max-width: 1444px) {
@@ -75,12 +75,12 @@
     h4 {
       font-size: 16px;
       margin-bottom: 0 !important;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
     p {
       font-size: 14px;
       margin-bottom: 0 !important;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
   }
   .card-header {
@@ -97,8 +97,8 @@
   .card-header.title {
     background-color: white;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-   
+    font-family: "Poppins", sans-serif;
+
     color: #000;
     font-size: 16px !important;
   }
@@ -130,14 +130,14 @@
     h2 {
       font-weight: 600;
       font-style: 34px;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
     ul {
       list-style: none;
       margin-left: 0;
       font-weight: 400;
       padding-left: 0;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
     li:before {
       content: "";
@@ -170,7 +170,7 @@
     padding-bottom: 44px;
     position: relative;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     &::after {
       content: "";
       height: 5px;
@@ -252,16 +252,20 @@
       }
     }
   }
-  .slick-dots-custom{
-    position:absolute;
-    bottom:30px;
+  .slick-dots-custom {
+    position: absolute;
+    bottom: 30px;
   }
   .slick-dots li.slick-active button:before {
-    color:orange !important;
-}
- 
-  .three-img{
-    h4{
+    color: orange !important;
+    font-size: 15px;
+  }
+  .slick-dots li button:before {
+    font-size: 15px;
+  }
+
+  .three-img {
+    h4 {
       font-weight: bold;
     }
   }
@@ -283,7 +287,7 @@
       margin-top: 20px !important;
       font-size: 18px;
       font-weight: 600;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       text-align: center;
     }
   }
