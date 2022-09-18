@@ -137,7 +137,7 @@ const Home = () => {
             }
         }
     }
-    const [activeId, setActiveId] = useState("0");
+    const [activeId, setActiveId] = useState('0');
 
     function toggleActive(id) {
         if (activeId === id) {
@@ -187,7 +187,14 @@ const Home = () => {
             <div className='top-prev2' onClick={checkPrev}><AiOutlineLeft color='black' size={30} /></div>
         );
     }
+    const [selectedData, setSelectedData] = useState(furnitureItems[0])
 
+    useEffect(() => {
+        setSelectedData(furnitureItems[0])
+    }, [])
+
+    console.log('furnitureItems', furnitureItems[0]);
+    console.log('selectedData', selectedData);
     return (
         <>
 
@@ -200,7 +207,7 @@ const Home = () => {
                         ref={slider => (setSliderTop(slider))} >
 
                         {furnitureItems.length > 0 && furnitureItems.map((item, i) =>
-                            <div className='d-flex align-items-center flex-column'>
+                            <div className='d-flex align-items-center flex-column select-img' onClick={() => setSelectedData(item)}>
                                 <div className="top-carousel mb-4" key={i}>
                                     <img className="furniture-img" src={item.img}></img>
                                 </div>
@@ -222,7 +229,7 @@ const Home = () => {
                                     return (
                                         <div className="slick-slide main" key={slide.id}>
                                             <img className="slick-slide-image1 img-fluid"
-                                                src={require(`../../../images/soho_36/angle${colorId == 1 ? 1 : colorId == 2 ? 2 : colorId == 3 ? 3 : colorId}_${currentColor}.jpg`)} />
+                                                src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${colorId == 1 ? 1 : colorId == 2 ? 2 : colorId == 3 ? 3 : colorId}.jpg`)} />
                                         </div>
                                     )
                                 }
@@ -239,7 +246,7 @@ const Home = () => {
 
                                         <div className="slick-slide" key={slide.id}>
                                             <img onClick={() => resetColor(slide.id)} className="slick-slide-image"
-                                                src={require(`../../../images/soho_36/angle${slide.id}_${currentColor}.jpg`)} />
+                                                src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
                                         </div>
 
                                     )}
@@ -251,43 +258,19 @@ const Home = () => {
 
                     <Col xs={12} md={6} className="mt-4 mt-md-0 color-item  ">
                         <Row className=' circle'>
-                            <Col xs={{span:12, order:2}} md={{span:12, order:1}}>
+                            <Col xs={{ span: 12, order: 2 }} md={{ span: 12, order: 1 }}>
                                 <div className='list mt-5 mt-md-0'>
-                                    <h2>Langmore 60</h2>
+                                    <h2>{selectedData?.catagory}</h2>
                                     <ul className='pt-2'>
+                                        {selectedData?.detailsList.map((item, i) =>
+                                            <li key={i}>{item.value}</li>
+                                        )}
 
-                                        <li>Light Gray Finish</li>
-
-                                        <li>Brushed nickel finish hardware</li>
-
-                                        <li>2 soft-close doors</li>
-
-                                        <li>Natural 1 in.carrara white marble countertop and backsplash</li>
-
-                                        <li>Top pre-drilled for 8 in. Widespread faucet</li>
-
-                                        <li>White vitreous china rectangular undermount sink</li>
-
-                                        <li>Adjustable height levelers</li>
-
-                                        <li>Faucet not included</li>
-
-                                        <li>Hardware color: Brushed Nickel</li>
-
-                                        <li>Primary Wood: Poplar and Secondary Wood:MDF</li>
-
-                                        <li>Shape:Rectangular</li>
-
-                                        <li>Number of Doors:2</li>
-
-                                        <li>Number of Shelves:1</li>
-
-                                        <li>Vanity Cabinet Size:37-Inch</li>
                                     </ul>
 
                                 </div>
                             </Col>
-                            <Col xs={{span:12, order:1}} md={{span:12, order:1}} className="three-img d-flex flex-row align-items-center align-items-md-start  justify-content-center justify-content-md-start">
+                            <Col xs={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }} className="three-img d-flex flex-row align-items-center align-items-md-start  justify-content-center justify-content-md-start">
                                 <img id="Popover1" onMouseEnter={onHover} onMouseLeave={onHoverLeave} className="slick-slide-image4" onClick={() => testImage('cream')} src={require(`../../../images/svg/ven/circle1.svg`)} />
                                 <img id="Popover2" className="slick-slide-image4" onMouseEnter={onHover2} onMouseLeave={onHoverLeave2} onClick={() => testImage('gray')} src={require(`../../../images/svg/ven/circle2.svg`)} />
                                 <img id="Popover3" className="slick-slide-image4" onMouseEnter={onHover3} onMouseLeave={onHoverLeave3} onClick={() => testImage('white')} src={require(`../../../images/svg/ven/circle3.png`)} />
@@ -298,98 +281,29 @@ const Home = () => {
                         <Row className='w-100'>
                             <Col xs={12}>
                                 <Accordion defaultActiveKey={activeId} className="pt-5 pb-5 mb-5">
-                                    <Card className="rounded-lg border-0">
-                                        <Accordion.Toggle
-                                            as={Card.Header}
-                                            eventKey="0"
-                                            onClick={() => toggleActive("0")}
-                                            className={activeId === "0" ? "active title" : 'title'}
-                                        >
-                                            <div className='d-flex align-items-center justify-content-between'>
-                                                <h4>Details</h4>
-                                                <AiOutlinePlus size={20} />
-                                            </div>
-                                        </Accordion.Toggle>
-                                        <Accordion.Collapse eventKey="0">
-                                            <Card.Body>
-                                                <p className="text-muted">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                    ullamco laboris nisi ut aliquip
-                                                </p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className="rounded-lg border-0">
-                                        <Accordion.Toggle
-                                            as={Card.Header}
-                                            eventKey="1"
-                                            onClick={() => toggleActive("1")}
-                                            className={activeId === "1" ? "active title" : 'title'}
-                                        >
-                                            <div className='d-flex align-items-center justify-content-between'>
-                                                <h4>Dimensions</h4>
-                                                <AiOutlinePlus size={20} />
-                                            </div>
-                                        </Accordion.Toggle>
-                                        <Accordion.Collapse eventKey="1">
-                                            <Card.Body>
-                                                <p className="text-muted">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                    ullamco laboris nisi ut aliquip
-                                                </p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className="rounded-lg border-0">
-                                        <Accordion.Toggle
-                                            as={Card.Header}
-                                            eventKey="2"
-                                            onClick={() => toggleActive("2")}
-                                            className={activeId === "2" ? "active title" : 'title'}
-                                        >
-                                            <div className='d-flex align-items-center justify-content-between'>
-                                                <h4>Specifications</h4>
-                                                <AiOutlinePlus size={20} />
-                                            </div>
-                                        </Accordion.Toggle>
-                                        <Accordion.Collapse eventKey="2">
-                                            <Card.Body>
-                                                <p className="text-muted">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                    ullamco laboris nisi ut aliquip
-                                                </p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
-                                    <Card className="rounded-lg border-0 mb-3">
-                                        <Accordion.Toggle
-                                            as={Card.Header}
-                                            eventKey="3"
-                                            onClick={() => toggleActive("3")}
-                                            className={activeId === "3" ? "active title" : 'title'}
-                                        >
-                                            <div className='d-flex align-items-center justify-content-between'>
-                                                <h4>Shipping and Returns</h4>
-                                                <AiOutlinePlus size={20} />
-                                            </div>
-                                        </Accordion.Toggle>
-                                        <Accordion.Collapse eventKey="3">
-                                            <Card.Body>
-                                                <p className="text-muted">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                                    ullamco laboris nisi ut aliquip
-                                                </p>
-                                            </Card.Body>
-                                        </Accordion.Collapse>
-                                    </Card>
+                                    {selectedData?.tabData.map((item, i) =>
+                                        <Card key={i} className="rounded-lg border-0">
+                                            <Accordion.Toggle
+                                                as={Card.Header}
+                                                eventKey={`${i}`}
+                                                onClick={() => toggleActive(`${i}`)}
+                                                className={activeId === `${i}` ? "active title" : 'title'}
+                                            >
+                                                <div className='d-flex align-items-center justify-content-between'>
+                                                    <h4>{item.title}</h4>
+                                                    <AiOutlinePlus size={20} />
+                                                </div>
+                                            </Accordion.Toggle>
+                                            <Accordion.Collapse eventKey={`${i}`}>
+                                                <Card.Body>
+                                                    <p className="text-muted">
+                                                        {item.description}
+                                                    </p>
+                                                </Card.Body>
+                                            </Accordion.Collapse>
+                                        </Card>
+                                    )}
+
                                 </Accordion>
                             </Col>
                         </Row>

@@ -8,7 +8,6 @@ import PublicMain from "../layouts/Public/Main"
 import PublicMain2 from "../layouts/Public/Main2"
 
 import Home from "../pages/Public/home"
-import Details from "../pages/Public/details"
 import Contact from "../pages/Public/contact"
 import About from "../pages/Public/about"
 
