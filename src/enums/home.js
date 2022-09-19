@@ -80,9 +80,9 @@ export const furnitureItems = [
             ]
     },
     {
-        catagory: 'langmore v2',
+        catagory: 'langmore 60',
         img: require('../images/svg/ven/ven1.svg'),
-        imgType: 'langmore_v2',
+        imgType: 'langmore_60',
         detailsList:
             [
                 { value: 'Light Gray Finish' },
@@ -121,7 +121,7 @@ export const furnitureItems = [
     },
     {
         catagory: 'Malibu 60',
-        img: require('../images/svg/ven/ven5.svg'),
+        img: require('../images/svg/ven/ven4.svg'),
         imgType: 'malibu_60',
         detailsList:
             [
@@ -161,7 +161,7 @@ export const furnitureItems = [
     },
     {
         catagory: 'Prestige 36',
-        img: require('../images/svg/ven/ven1.svg'),
+        img: require('../images/svg/ven/ven5.svg'),
         imgType: 'prestige 36',
         detailsList:
             [
