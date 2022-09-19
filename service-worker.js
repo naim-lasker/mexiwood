@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mexiwood/precache-manifest.32e46400109ac3f12e1b65f45e0e380d.js"
+  "/mexiwood/precache-manifest.cd873afa90e5d4628973e26b1ad96d4d.js"
 );
 
 self.addEventListener('message', (event) => {
