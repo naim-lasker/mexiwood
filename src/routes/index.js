@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Router, Switch } from "react-router-dom"
+import { HashRouter, Router, Switch } from "react-router-dom"
 
 import browserHistory from "./History"
 
@@ -15,7 +15,7 @@ import About from "../pages/Public/about"
 const Routes = () => {
 
     return (
-        <BrowserRouter basename={window.location.pathname || ''}>
+        <HashRouter basename={window.location.pathname || ''}>
             <Router history={browserHistory}>
                 <Switch>
                     <RouteWithLayout
@@ -41,7 +41,7 @@ const Routes = () => {
                     />
                 </Switch>
             </Router>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
