@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb4e60dc54d7e7c384ab7710bcd942ea",
+    "revision": "9aeda49ddc44f8e241ef10f74d44396f",
     "url": "/mexiwood/index.html"
   },
   {
-    "revision": "8fb7eab99f15783981bb",
+    "revision": "b88b8319a02dfab6264f",
     "url": "/mexiwood/static/css/2.fd53faa0.chunk.css"
   },
   {
-    "revision": "0f0165e30d7d88c4f52c",
+    "revision": "f556e602191e47775c57",
     "url": "/mexiwood/static/css/main.ad6e1c0e.chunk.css"
   },
   {
-    "revision": "8fb7eab99f15783981bb",
-    "url": "/mexiwood/static/js/2.135ce70e.chunk.js"
+    "revision": "b88b8319a02dfab6264f",
+    "url": "/mexiwood/static/js/2.1d822a0a.chunk.js"
   },
   {
     "revision": "a4176ac88d963299b8ce9bd1b424a56b",
-    "url": "/mexiwood/static/js/2.135ce70e.chunk.js.LICENSE.txt"
+    "url": "/mexiwood/static/js/2.1d822a0a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f0165e30d7d88c4f52c",
-    "url": "/mexiwood/static/js/main.3832144c.chunk.js"
+    "revision": "f556e602191e47775c57",
+    "url": "/mexiwood/static/js/main.0595d377.chunk.js"
   },
   {
     "revision": "f6e5349d05717a0c4071",
