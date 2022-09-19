@@ -1,5 +1,5 @@
 import React from "react"
-import { HashRouter, Router, Switch } from "react-router-dom"
+import { Router, Switch } from "react-router-dom"
 
 import browserHistory from "./History"
 
@@ -15,33 +15,31 @@ import About from "../pages/Public/about"
 const Routes = () => {
 
     return (
-        <HashRouter basename={window.location.pathname || ''}>
-            <Router history={browserHistory}>
-                <Switch>
-                    <RouteWithLayout
-                        component={Home}
-                        exact
-                        layout={PublicMain}
-                        path='/'
-                        title='Home'
-                    />
-                    <RouteWithLayout
-                        component={Contact}
-                        exact
-                        layout={PublicMain2}
-                        path='/contact'
-                        title='Contact Us'
-                    />
-                    <RouteWithLayout
-                        component={About}
-                        exact
-                        layout={PublicMain2}
-                        path='/about'
-                        title='About Us'
-                    />
-                </Switch>
-            </Router>
-        </HashRouter>
+        <Router history={browserHistory}>
+            <Switch>
+                <RouteWithLayout
+                    component={Home}
+                    exact
+                    layout={PublicMain}
+                    path='/'
+                    title='Home'
+                />
+                <RouteWithLayout
+                    component={Contact}
+                    exact
+                    layout={PublicMain2}
+                    path='/contact'
+                    title='Contact Us'
+                />
+                <RouteWithLayout
+                    component={About}
+                    exact
+                    layout={PublicMain2}
+                    path='/about'
+                    title='About Us'
+                />
+            </Switch>
+        </Router>
     )
 }
 
