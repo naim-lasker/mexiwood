@@ -164,7 +164,7 @@ export const furnitureItems = [
         img: require('../images/svg/ven/ven5.svg'),
         imgType: 'prestige 36',
         detailsList:
-            [
+            [       
                 { value: 'Light Gray Finish' },
                 { value: 'Brushed nickel finish hardware' },
                 { value: 'Natural 1 in.carrara white marble countertop and backsplash' },
@@ -201,7 +201,7 @@ export const furnitureItems = [
     },
     {
         catagory: 'Prestige 60',
-        img: require('../images/svg/ven/ven3.svg'),
+        img: require('../images/svg/ven/ven6.svg'),
         imgType: 'prestige_60',
         detailsList:
             [
@@ -241,7 +241,7 @@ export const furnitureItems = [
     },
     {
         catagory: 'Soho 36',
-        img: require('../images/svg/ven/ven3.svg'),
+        img: require('../images/svg/ven/ven7.svg'),
         imgType: 'soho_36',
         detailsList:
             [
@@ -281,7 +281,7 @@ export const furnitureItems = [
     },
     {
         catagory: 'Soho 60',
-        img: require('../images/svg/ven/ven3.svg'),
+        img: require('../images/svg/ven/ven8.svg'),
         imgType: 'soho_60',
         detailsList:
             [
