@@ -80,6 +80,7 @@
     height: 20px;
     img {
       margin-right: 15px !important;
+      cursor: pointer;
       &:hover {
         border: 1px solid #ff6000;
         border-radius: 100%;
@@ -92,7 +93,7 @@
 ///
 ///
 .home-main {
-  padding: 62px 300px 0;
+  padding: 80px 300px 0;
   position: relative;
 
   .select-img {

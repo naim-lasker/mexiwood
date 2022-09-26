@@ -10,17 +10,17 @@ const About = () => {
 
     return (
         <>
-            < div className='touch-content'>
-                <div className="container py-5 mb-5">
+            < div className='touch-content mb-5 pb-5'>
+                <div className="container">
 
-                    <div className="row py-5 mb-5">
+                    <div className="row mb-5 pb-5">
                         <div className="col-12">
                             <h2 className='title2'>About US</h2>
                         </div>
 
                         <div className="col-12 col-lg-6 d-flex justify-content-center align-items-center flex-column">
                             <div className='bg'>
-                                <img className='bg-img' src={require('../../../images/svg/about.svg')} />
+                                <img className='bg-img' src={require('../../../images/svg/about.png')} />
                                 <img className='right' src={require('../../../images/svg/right.svg')} />
                             </div>
                         </div>

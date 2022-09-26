@@ -1,10 +1,11 @@
 .touch-content {
+    margin: 80px 0;
     .bg {
         position: relative;
         border-radius: 10px;
         width: 100% !important;
         border-radius: 10px;
-        height: 95%;
+        height: 97%;
         @media only screen and (max-width: 768px) {
             width: 100% !important;
             border-radius: 10px;
@@ -27,7 +28,7 @@
         .overlay {
             background-color: #333333 !important;
             top: 0;
-            opacity: 0.8;
+            opacity: 0.5;
             left: 0;
             right: 0;
             bottom: 0;
@@ -77,7 +78,7 @@
         p {
             color: white;
             font-size: 16px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             @media only screen and (max-width: 992px) {
                 font-size: 14px;
             }
@@ -92,11 +93,11 @@
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 30px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
         }
         p {
             font-size: 16px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
         }
     }
     .title2 {
@@ -106,7 +107,7 @@
         position: relative;
         text-align: center;
         text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         &::after {
             content: "";
             height: 5px;
@@ -132,8 +133,24 @@
         .form-control {
             border: 1px solid #ededed;
             border-radius: 4px;
-            font-family: 'Poppins', sans-serif;
+            height: 48px;
+            font-family: "Poppins", sans-serif;
             margin-bottom: 30px;
+        }
+        .area{
+            height: 128px !important;
+        }
+        input:focus,
+        textarea:focus {
+            outline-offset: 0px !important;
+            outline: none !important;
+        }
+         input:focus,
+         textarea:focus {
+            border: 1px solid #ff6000 !important;
+            box-shadow: 0 0 3px #ff6000 !important;
+            -moz-box-shadow: 0 0 3px #ff6000 !important;
+            -webkit-box-shadow: 0 0 3px #ff6000 !important;
         }
     }
     .btn-send {
@@ -141,13 +158,11 @@
         border-radius: 4px;
         height: 48px;
         width: 100%;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         color: white;
         margin-top: 30px;
     }
 }
-
-
 
 .bg-footer {
     width: 100%;

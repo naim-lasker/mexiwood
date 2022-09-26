@@ -28,7 +28,7 @@ const Contact = () => {
         < div className='touch-content'>
             <div className="container ">
 
-                <div className="row py-5">
+                <div className="row">
                     <div className="col-12">
                         <h2 className='title2'>Get in touch</h2>
                     </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                                 <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email address' required className="form-control" aria-describedby="emailHelp" />
                             </div>
                             <div className="form-group">
-                                <textarea className="form-control" value={msg} onChange={(e) => setMsg(e.target.value)} required placeholder='Message' rows="5" />
+                                <textarea className="form-control area" value={msg} onChange={(e) => setMsg(e.target.value)} required placeholder='Message' rows="5" />
                             </div>
                             <ReCAPTCHA
                                 sitekey="Your client site key"
@@ -95,7 +95,7 @@ const Contact = () => {
 
 
 
-                    <div className="col-12 col-md-12 mt-5 mt-lg-0">
+                    <div className="col-12 col-md-12 mt-5">
 
                         <div style={{ height: '365px', width: '100%' }}>
                             <GoogleMapReact
