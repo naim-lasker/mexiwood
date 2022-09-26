@@ -85,7 +85,7 @@ const Contact = () => {
                                 <textarea className="form-control area" value={msg} onChange={(e) => setMsg(e.target.value)} required placeholder='Message' rows="5" />
                             </div>
                             <ReCAPTCHA
-                                sitekey="Your client site key"
+                                sitekey="6LfgYTIiAAAAALPXIAiVFbTS5GF7hdTll5LieKZg"
                             />
                             <button type="submit" onClick={submit} className="btn btn-send">SEND</button>
                         </form>
