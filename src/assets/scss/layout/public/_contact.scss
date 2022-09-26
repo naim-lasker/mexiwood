@@ -2,7 +2,7 @@
     margin: 80px 0;
     @media only screen and (max-width: 575px) {
         margin: 30px 0;
-      }
+    }
     .bg {
         position: relative;
         border-radius: 10px;
@@ -113,21 +113,24 @@
         font-family: "Poppins", sans-serif;
         @media only screen and (max-width: 575px) {
             font-size: 30px;
-          }
+        }
         &::after {
             content: "";
             height: 5px;
             position: absolute;
             bottom: -10px;
-            left: 45%;
             -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
             z-index: -1;
             background: #ff6000;
-            width: 100px;
             margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 15%;
+            @media only screen and (max-width: 992px) {
+            }
             @media only screen and (max-width: 768px) {
-                left: 40%;
+                width: 25%;
             }
         }
     }
@@ -143,7 +146,7 @@
             font-family: "Poppins", sans-serif;
             margin-bottom: 30px;
         }
-        .area{
+        .area {
             height: 128px !important;
         }
         input:focus,
@@ -151,8 +154,8 @@
             outline-offset: 0px !important;
             outline: none !important;
         }
-         input:focus,
-         textarea:focus {
+        input:focus,
+        textarea:focus {
             border: 1px solid #ff6000 !important;
             box-shadow: 0 0 3px #ff6000 !important;
             -moz-box-shadow: 0 0 3px #ff6000 !important;

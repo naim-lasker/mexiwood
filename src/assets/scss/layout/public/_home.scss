@@ -65,13 +65,13 @@
       width: 100%;
     }
   }
-  h6{
+  h6 {
     font-size: 18px;
     padding-top: 30px;
     padding-bottom: 15px;
     text-decoration: none !important;
     color: #000;
-    &:hover{
+    &:hover {
       text-decoration: none !important;
     }
   }
@@ -116,7 +116,7 @@
       margin-bottom: 0 !important;
       font-family: "Poppins", sans-serif;
     }
-    .card-list li{
+    .card-list li {
       font-size: 14px;
       margin-bottom: 0 !important;
       font-family: "Poppins", sans-serif;
@@ -218,22 +218,19 @@
       height: 5px;
       position: absolute;
       bottom: 40px;
-      left: 42%;
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
       z-index: -1;
       background: #ff6000;
-      width: 205px;
       margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 15%;
       @media only screen and (max-width: 992px) {
-        left: 38%;
-        // width: 105px;
       }
       @media only screen and (max-width: 768px) {
-        left: 38%;
-        width: 105px;
+        width: 25%;
       }
-     
     }
   }
   .main-carousel {
