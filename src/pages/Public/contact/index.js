@@ -1,7 +1,6 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
 import GoogleMapReact from 'google-map-react';
-import BannerAboutUs from '../../../components/Public/Banner';
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 
@@ -33,7 +32,7 @@ const Contact = () => {
                                     <p>Objectively innovate your empowered manufactured
                                         products whereas parallel platforms for your ideas.</p>
                                 </div>
-                                <div className="row page-content">
+                                {/* <div className="row page-content">
                                     <div className='info'>
                                         <img src={require('../../../images/svg/loc.svg')}></img>
                                     </div>
@@ -50,7 +49,7 @@ const Contact = () => {
                                         <p className='mb-0'>(+088) 589-8745</p>
                                         <p className='mb-0'> (+088) 222-9999</p>
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="row page-content">
                                     <div className='info'>
                                         <img src={require('../../../images/svg/Email.svg')}></img>
@@ -77,6 +76,9 @@ const Contact = () => {
                                 <textarea className="form-control" placeholder='Message' rows="5" />
                             </div>
                         </form>
+                        <ReCAPTCHA
+                            sitekey="Your client site key"
+                        />
                         <button type="submit" className="btn btn-send">SEND</button>
                     </div>
 

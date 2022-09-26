@@ -10,6 +10,7 @@ import PublicMain2 from "../layouts/Public/Main2"
 import Home from "../pages/Public/home"
 import Contact from "../pages/Public/contact"
 import About from "../pages/Public/about"
+import Details from "../pages/Public/details"
 
 
 const Routes = () => {
@@ -20,7 +21,7 @@ const Routes = () => {
                 <RouteWithLayout
                     component={Home}
                     exact
-                    layout={PublicMain}
+                    layout={PublicMain2}
                     path='/'
                     title='Home'
                 />
@@ -37,6 +38,13 @@ const Routes = () => {
                     layout={PublicMain2}
                     path='/about'
                     title='About Us'
+                />
+                <RouteWithLayout
+                    component={Details}
+                    exact
+                    layout={PublicMain2}
+                    path='/details'
+                    title='Details'
                 />
             </Switch>
         </Router>
