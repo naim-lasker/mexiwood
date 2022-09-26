@@ -103,7 +103,7 @@
     padding: 62px 50px 0;
   }
   @media only screen and (max-width: 575px) {
-    padding: 10px 20px;
+    padding: 30px 20px;
   }
   .card {
     h4 {
@@ -210,6 +210,9 @@
     position: relative;
     text-align: center;
     font-family: "Poppins", sans-serif;
+    @media only screen and (max-width: 575px) {
+      font-size: 30px;
+    }
     &::after {
       content: "";
       height: 5px;
@@ -230,6 +233,7 @@
         left: 38%;
         width: 105px;
       }
+     
     }
   }
   .main-carousel {

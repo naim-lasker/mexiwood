@@ -1,5 +1,8 @@
 .touch-content {
     margin: 80px 0;
+    @media only screen and (max-width: 575px) {
+        margin: 30px 0;
+      }
     .bg {
         position: relative;
         border-radius: 10px;
@@ -101,13 +104,16 @@
         }
     }
     .title2 {
-        font-style: 40px;
+        font-size: 40px;
         font-weight: 700;
         margin-bottom: 84px;
         position: relative;
         text-align: center;
         text-transform: uppercase;
         font-family: "Poppins", sans-serif;
+        @media only screen and (max-width: 575px) {
+            font-size: 30px;
+          }
         &::after {
             content: "";
             height: 5px;

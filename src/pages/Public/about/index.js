@@ -13,7 +13,7 @@ const About = () => {
             < div className='touch-content mb-5 pb-5'>
                 <div className="container">
 
-                    <div className="row mb-5 pb-5">
+                    <div className="row mb-0 pb-0 mb-md-5 pb-md-5">
                         <div className="col-12">
                             <h2 className='title2'>About US</h2>
                         </div>
