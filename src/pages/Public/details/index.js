@@ -266,7 +266,7 @@ const Details = () => {
                             <Col xs={{ span: 12, order: 2 }} md={{ span: 12, order: 1 }}>
                                 <div className='list mt-5 mt-md-0'>
                                     <h2>{selectedData?.catagory}</h2>
-                                    <ul className='pt-2'>
+                                    <ul className='pt-2 px-3 px-sm-0'>
                                         {selectedData?.detailsList.map((item, i) =>
                                             <li key={i}>{item.value}</li>
                                         )}
