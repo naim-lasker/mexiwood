@@ -23,7 +23,7 @@ const Header = () => {
 
         <Navbar expand="lg" className='navbar-custom'>
             <div className="video">
-                <video ref={vidRef} autoPlay muted loop>
+                <video ref={vidRef} autoPlay muted loop playsInline>
                     <source src="https://mexiwood.mx/images/videos/plywood-vid-3.mp4" type="video/mp4"></source>
                 </video>
             </div>
