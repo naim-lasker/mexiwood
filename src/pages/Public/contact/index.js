@@ -21,7 +21,7 @@ const Contact = () => {
     const [msg, setMsg] = useState('')
 
     const submit = () => {
-        console.log('hii');
+        // console.log('hii');
     }
 
     return (

@@ -198,8 +198,8 @@ const Details = () => {
         setCurrentColor(color ? color : 'white')
     }, [data])
 
-    console.log('furnitureItems', furnitureItems[0]);
-    console.log('selectedData', selectedData);
+    // console.log('furnitureItems', furnitureItems[0]);
+    // console.log('selectedData', selectedData);
     return (
         <>
 
@@ -207,7 +207,7 @@ const Details = () => {
 
             <section className='home-main'>
                 <h2 className='title2'>Bathroom Vanities</h2>
-                <div >
+                {/* <div >
                     <Slider className='main-carousel' {...settings} asNavFor={navTop}
                         ref={slider => (setSliderTop(slider))} >
 
@@ -220,8 +220,8 @@ const Details = () => {
                             </div>
                         )}
                     </Slider>
-                </div>
-                <Row className='pt-5'>
+                </div> */}
+                <Row className='pt-4'>
                     <Col xs={12} md={6} className="mx-auto">
                         <div className="slider-wrapper d-flex flex-column align-items-center">
                             <Slider
