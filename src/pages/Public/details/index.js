@@ -87,15 +87,16 @@ const Details = () => {
     }
 
     const settingsThumbs = {
-        slidesToShow: slidesData.length > 4 ? 4 : slidesData.length,
-        infinite: slidesData.length > 4,
-        slidesToScroll: 1,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        infinite: true,
         asNavFor: '.slider-for',
         centerMode: true,
         swipeToSlide: true,
         adaptiveHeight: true,
         focusOnSelect: true,
-        centerPadding: '20px',
+        speed: 500,
+        // centerPadding: '20px',
         nextArrow: <SampleNextArrow2 />,
         prevArrow: <SamplePrevArrow2 />,
     }

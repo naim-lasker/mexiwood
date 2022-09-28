@@ -7,6 +7,8 @@ import insta from '../../../images/svg/insta.svg'
 import twitter from '../../../images/svg/twitter.svg'
 import logo from '../../../images/svg/logo.svg'
 import { useLocation } from 'react-router-dom';
+import {  AiFillInstagram,AiFillYoutube,AiFillLinkedin} from 'react-icons/ai';
+
 
 const Header2 = () => {
 
@@ -38,15 +40,15 @@ const Header2 = () => {
                 </Col>
                 <Col xs={3} lg={6} className="d-flex flex-column align-items-end justify-content-center">
                     <ul className="navbar-nav sm-icons">
-                        <div className='icons'>
-                            <img src={fb} />
-                        </div>
-                        <div className='icons'>
-                            <img src={insta} />
-                        </div>
-                        <div className='icons'>
-                            <img src={twitter} />
-                        </div>
+                        <a className='icons'>
+                            <AiFillYoutube className="icon"/>
+                        </a>
+                        <a className='icons'>
+                            <AiFillInstagram className="icon"/>
+                        </a>
+                        <a className='icons'>
+                            <AiFillLinkedin className="icon"/>
+                        </a>
                     </ul>
                 </Col>
                 <Col xs={12} lg={12} className="expan w-100">
