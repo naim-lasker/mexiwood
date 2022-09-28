@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { furnitureItems } from '../../../enums/home';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
@@ -12,7 +12,7 @@ import { AiOutlineLeft, AiOutlineRight, AiOutlinePlus } from 'react-icons/ai';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Thumbs } from 'swiper'
+import { Navigation, Thumbs, Pagination } from 'swiper'
 import 'swiper/swiper.min.css'
 import 'swiper/modules/pagination/pagination.min.css'
 import { useSwiper } from 'swiper/react';
@@ -208,7 +208,17 @@ const Details = () => {
     // console.log('furnitureItems', furnitureItems[0]);
     // console.log('selectedData', selectedData);
     const [activeThumb, setActiveThumb] = useState()
+    const [swiperRef, setSwiperRef] = useState();
 
+    const handleLeftClick = useCallback(() => {
+        if (!swiperRef) return;
+        swiperRef.slidePrev();
+    }, [swiperRef]);
+
+    const handleRightClick = useCallback(() => {
+        if (!swiperRef) return;
+        swiperRef.slideNext();
+    }, [swiperRef]);
     return (
         <>
 
@@ -288,28 +298,28 @@ const Details = () => {
                             )}
                         </Swiper>
                         <Swiper
-                            onSwiper={setActiveThumb}
+                            onSwiper={setSwiperRef}
                             loop={true}
                             spaceBetween={10}
                             slidesPerView={4}
-                            modules={[Navigation, Thumbs]}
-                            navigation={{
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                            }}
+                            modules={[Navigation, Thumbs, Pagination]}
+                            observer
+                            observeParents
                             className='product-images-slider-thumbs'
                         >
                             {slidesData.map((slide, index) =>
+                                <div>
+                                    <SwiperSlide key={index}>
+                                        <div className="product-images-slider-thumbs-wrapper">
 
-                                <SwiperSlide key={index}>
-                                    <div className="product-images-slider-thumbs-wrapper">
-
-                                        <img onClick={() => resetColor(slide.id)}
-                                            src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
-                                    </div>
-                                </SwiperSlide>
-
+                                            <img onClick={() => resetColor(slide.id)}
+                                                src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
+                                        </div>
+                                    </SwiperSlide>
+                                </div>
                             )}
+                            <div class="swiper-button-next" onClick={handleRightClick}><AiOutlineRight/></div>
+                            <div className="swiper-button-prev" onClick={handleLeftClick}><AiOutlineLeft/></div>
                         </Swiper>
                         {/* </div> */}
                     </Col>

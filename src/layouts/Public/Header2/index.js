@@ -32,12 +32,6 @@ const Header2 = () => {
             </div>
             <div className='overlay'></div>
             <Row className='w-100 justify-content-between content header2'>
-                <Col xs={3} lg={6}>
-                    <Navbar.Brand href="/">
-                        <img className='logo' src={logo}></img>
-                    </Navbar.Brand>
-
-                </Col>
                 <Col xs={3} lg={6} className="d-flex flex-column align-items-end justify-content-center">
                     <ul className="navbar-nav sm-icons">
                         <a className='icons'>
