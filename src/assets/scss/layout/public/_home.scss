@@ -159,6 +159,9 @@
       &:hover {
         border: 1px solid #ff6000;
       }
+      &:last-child {
+        margin-right: 0px;
+      }
       @media only screen and (max-width: 575px) {
         width: 80px;
         height: 80px;

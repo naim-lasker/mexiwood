@@ -66,9 +66,9 @@ const Header2 = () => {
                     </Navbar.Collapse>
 
                 </Col>
-                <Col xs={3} className="d-flex flex-column align-items-center justify-content-center">
+                {/* <Col xs={3} className="d-flex flex-column align-items-center justify-content-center">
                     <Navbar.Toggle className='ml-5 mt-2 mt-lg-2 nav-btn' aria-controls="basic-navbar-nav" />
-                </Col>
+                </Col> */}
 
             </Row>
 
