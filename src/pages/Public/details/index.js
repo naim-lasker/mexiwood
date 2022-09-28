@@ -87,8 +87,8 @@ const Details = () => {
     }
 
     const settingsThumbs = {
-        slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToShow: 4,
+        slidesToScroll: 1,
         infinite: true,
         asNavFor: '.slider-for',
         centerMode: true,
@@ -96,7 +96,7 @@ const Details = () => {
         adaptiveHeight: true,
         focusOnSelect: true,
         speed: 500,
-        // centerPadding: '20px',
+        centerPadding: '20px',
         nextArrow: <SampleNextArrow2 />,
         prevArrow: <SamplePrevArrow2 />,
     }
