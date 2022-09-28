@@ -107,7 +107,7 @@
         .nav-link {
             color: white;
             font-weight: 500;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             padding-right: 24px;
             font-size: 16px;
             &:hover {
@@ -125,7 +125,7 @@
             font-weight: 500;
             padding-right: 24px;
             font-size: 16px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
             &:hover {
                 color: #ff6000;
             }
@@ -142,7 +142,7 @@
         align-items: center;
         justify-content: center;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-        &:hover{
+        &:hover {
             background-color: cadetblue;
         }
         @media only screen and (max-width: 992px) {
@@ -165,7 +165,7 @@
         align-items: center;
         justify-content: center;
         color: white;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         &:hover {
             background-color: rgb(201, 67, 0);
         }
@@ -175,7 +175,7 @@
         font-weight: 700;
         color: white;
         margin-top: 30px;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Poppins", sans-serif;
         text-transform: uppercase;
         @media only screen and (max-width: 1192px) {
             font-size: 50px;
@@ -192,7 +192,6 @@
 # End Header Styles
 --------------------------------------------------------------*/
 .navbar-custom2 {
-    
     .logo {
         width: 200px;
         height: 120px;
@@ -207,6 +206,9 @@
     }
     .header2 {
         border-bottom: 1px solid white;
+        @media only screen and (max-width: 992px) {
+            border: none;
+        }
     }
     position: relative;
     height: 200px;
@@ -219,25 +221,8 @@
         @media only screen and (max-width: 992px) {
             padding: 0 30px;
         }
-    }
-    .expan {
-        @media only screen and (max-width: 992px) {
-            background-color: #333333;
-            width: 80% !important;
-            top: 18%;
-            left: 4%;
-            border-radius: 10px;
-            z-index: 99;
-            position: absolute;
-        }
-        @media only screen and (max-width: 768px) {
-            background-color: #333333;
-            width: 60% !important;
-            top: 14%;
-            left: 14%;
-            border-radius: 10px;
-            z-index: 99;
-            position: absolute;
+        @media only screen and (max-width: 575px) {
+            padding: 0px;
         }
     }
     .overlay {
@@ -264,7 +249,6 @@
         }
     }
     .link-content {
-        border-bottom: 1px solid #ededed;
         border-top: 1px solid #ededed;
         padding: 24px;
         .nav-link {
@@ -288,7 +272,10 @@
             font-weight: 500;
             padding-right: 24px;
             font-size: 16px;
-            font-family: 'Poppins', sans-serif;
+            font-family: "Poppins", sans-serif;
+            @media only screen and (max-width: 575px) {
+                padding-right: 10px;
+            }
             &:hover {
                 color: #ff6000;
             }
@@ -306,17 +293,24 @@
         cursor: pointer;
         justify-content: center;
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-       .icon{
-        font-size: 25px;
-       }
-        &:hover{
-            background-color: #ff6000;
-            .icon{
-                color: white;
+        @media only screen and (max-width: 575px) {
+            width: 28px;
+            height: 28px;
+            // display: flex;
+            // color: black;
+            margin-left: 10px;
+        }
+        .icon {
+            font-size: 25px;
+            @media only screen and (max-width: 575px) {
+                font-size: 20px;
             }
         }
-        @media only screen and (max-width: 992px) {
-            display: none;
+        &:hover {
+            background-color: #ff6000;
+            .icon {
+                color: white;
+            }
         }
     }
     .nav-btn {

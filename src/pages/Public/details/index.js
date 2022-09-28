@@ -11,11 +11,18 @@ import { Popover, PopoverBody } from 'reactstrap';
 import { AiOutlineLeft, AiOutlineRight, AiOutlinePlus } from 'react-icons/ai';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Thumbs } from 'swiper'
+import 'swiper/swiper.min.css'
+import 'swiper/modules/pagination/pagination.min.css'
+import { useSwiper } from 'swiper/react';
+
 
 
 
 
 const Details = () => {
+    const swiper = useSwiper();
 
     const location = useLocation();
     const data = location.data;
@@ -78,20 +85,19 @@ const Details = () => {
 
     const settingsMain = {
         slidesToShow: 1,
-        infinite: true,
+        infinite: false,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-nav',
+        asNavFor: nav1,
         arrows: false,
     }
 
     const settingsThumbs = {
         slidesToShow: 4,
         slidesToScroll: 1,
-        infinite: true,
-        asNavFor: '.slider-for',
-        centerMode: true,
+        asNavFor: nav2,
+        centerMode: false,
         swipeToSlide: true,
         adaptiveHeight: true,
         focusOnSelect: true,
@@ -107,7 +113,7 @@ const Details = () => {
         }
         setColorId(id => id - 1)
 
-        slider1.slickPrev();
+        swiper.slickPrev();
     }
 
     const checkNext = () => {
@@ -116,7 +122,7 @@ const Details = () => {
             setColorId(1)
         }
 
-        slider1.slickNext();
+        swiper.slideNext();
 
     }
     const checkPrevTop = () => {
@@ -201,6 +207,8 @@ const Details = () => {
 
     // console.log('furnitureItems', furnitureItems[0]);
     // console.log('selectedData', selectedData);
+    const [activeThumb, setActiveThumb] = useState()
+
     return (
         <>
 
@@ -224,8 +232,8 @@ const Details = () => {
                 </div> */}
                 <Row className='pt-4'>
                     <Col xs={12} md={6} className="mx-auto">
-                        <div className="slider-wrapper d-flex flex-column align-items-center">
-                            <Slider
+                        {/* <div className="slider-wrapper d-flex flex-column align-items-center"> */}
+                        {/* <Slider
                                 {...settingsMain}
                                 asNavFor={nav2}
                                 ref={slider => (setSlider1(slider))}
@@ -258,8 +266,52 @@ const Details = () => {
                                     )}
 
                                 </Slider>
-                            </div>
-                        </div>
+                            </div> */}
+                        <Swiper
+                            loop={true}
+                            spaceBetween={10}
+                            navigation={true}
+                            modules={[Navigation, Thumbs]}
+                            grabCursor={true}
+                            thumbs={{ swiper: activeThumb }}
+                            className='product-images-slider'
+                        >
+                            {slidesData.map((slide, index) => {
+
+                                return (
+                                    <SwiperSlide key={index}>
+                                        <img
+                                            src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${colorId == 1 ? 1 : colorId == 2 ? 2 : colorId == 3 ? 3 : colorId}.jpg`)} />
+                                    </SwiperSlide>
+                                )
+                            }
+                            )}
+                        </Swiper>
+                        <Swiper
+                            onSwiper={setActiveThumb}
+                            loop={true}
+                            spaceBetween={10}
+                            slidesPerView={4}
+                            modules={[Navigation, Thumbs]}
+                            navigation={{
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            }}
+                            className='product-images-slider-thumbs'
+                        >
+                            {slidesData.map((slide, index) =>
+
+                                <SwiperSlide key={index}>
+                                    <div className="product-images-slider-thumbs-wrapper">
+
+                                        <img onClick={() => resetColor(slide.id)}
+                                            src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
+                                    </div>
+                                </SwiperSlide>
+
+                            )}
+                        </Swiper>
+                        {/* </div> */}
                     </Col>
 
                     <Col xs={12} md={6} className="mt-4 mt-md-0 color-item  ">
