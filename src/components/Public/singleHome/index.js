@@ -18,7 +18,7 @@ const SingleHomeItem = ({ item, imgType, imgName }) => {
                     data: item,
                     color: path
                 }} style={{ textDecoration: 'none' }}>
-                    <img src={require(`../../../images/home/${imgType}/angle_${path}.jpg`)} />
+                    <img className='bg-img' src={require(`../../../images/home/${imgType}/angle_${path}.jpg`)} />
                     <h6>{imgName}</h6>
                 </Link>
                 <div className="small-img d-flex">
