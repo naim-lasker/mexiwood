@@ -16,10 +16,6 @@ export const furnitureItems = [
         tabData:
             [
                 {
-                    title: 'Details',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
                     title: 'Dimensions',
                     description: [
                         { li: `60* Vanity with Top: 60"W × 24"D × 34'H` },
@@ -35,14 +31,6 @@ export const furnitureItems = [
                         { li: `Countertop Weight: 190 lbs.` },
                         { li: `Vanity Base Weight: 295 lbs. (without basins` },
                     ]
-                },
-                {
-                    title: 'Specifications',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
-                    title: 'Shipping and Returns',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
                 },
             ]
     },
@@ -62,10 +50,6 @@ export const furnitureItems = [
         tabData:
             [
                 {
-                    title: 'Details',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
                     title: 'Dimensions',
                     description: [
                         { li: `60* Vanity with Top: 60"W × 24"D × 34'H` },
@@ -81,14 +65,6 @@ export const furnitureItems = [
                         { li: `Countertop Weight: 190 lbs.` },
                         { li: `Vanity Base Weight: 295 lbs. (without basins` },
                     ]
-                },
-                {
-                    title: 'Specifications',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
-                    title: 'Shipping and Returns',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
                 },
             ]
     },
@@ -109,10 +85,6 @@ export const furnitureItems = [
         tabData:
             [
                 {
-                    title: 'Details',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
                     title: 'Dimensions',
                     description: [
                         { li: `60* Vanity with Top: 60"W × 24"D × 34'H` },
@@ -128,14 +100,6 @@ export const furnitureItems = [
                         { li: `Countertop Weight: 190 lbs.` },
                         { li: `Vanity Base Weight: 295 lbs. (without basins` },
                     ]
-                },
-                {
-                    title: 'Specifications',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
-                    title: 'Shipping and Returns',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
                 },
             ]
     },
@@ -156,10 +120,6 @@ export const furnitureItems = [
         tabData:
             [
                 {
-                    title: 'Details',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
                     title: 'Dimensions',
                     description: [
                         { li: `60* Vanity with Top: 60"W × 24"D × 34'H` },
@@ -175,14 +135,6 @@ export const furnitureItems = [
                         { li: `Countertop Weight: 190 lbs.` },
                         { li: `Vanity Base Weight: 295 lbs. (without basins` },
                     ]
-                },
-                {
-                    title: 'Specifications',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
-                    title: 'Shipping and Returns',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
                 },
             ]
     },
@@ -203,10 +155,6 @@ export const furnitureItems = [
         tabData:
             [
                 {
-                    title: 'Details',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
                     title: 'Dimensions',
                     description: [
                         { li: `60* Vanity with Top: 60"W × 24"D × 34'H` },
@@ -222,14 +170,6 @@ export const furnitureItems = [
                         { li: `Countertop Weight: 190 lbs.` },
                         { li: `Vanity Base Weight: 295 lbs. (without basins` },
                     ]
-                },
-                {
-                    title: 'Specifications',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
-                    title: 'Shipping and Returns',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
                 },
             ]
     },
@@ -249,10 +189,6 @@ export const furnitureItems = [
         tabData:
             [
                 {
-                    title: 'Details',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
                     title: 'Dimensions',
                     description: [
                         { li: `60* Vanity with Top: 60"W × 24"D × 34'H` },
@@ -268,14 +204,6 @@ export const furnitureItems = [
                         { li: `Countertop Weight: 190 lbs.` },
                         { li: `Vanity Base Weight: 295 lbs. (without basins` },
                     ]
-                },
-                {
-                    title: 'Specifications',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
-                    title: 'Shipping and Returns',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
                 },
             ]
     },
@@ -295,10 +223,6 @@ export const furnitureItems = [
         tabData:
             [
                 {
-                    title: 'Details',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
                     title: 'Dimensions',
                     description: [
                         { li: `60* Vanity with Top: 60"W × 24"D × 34'H` },
@@ -314,14 +238,6 @@ export const furnitureItems = [
                         { li: `Countertop Weight: 190 lbs.` },
                         { li: `Vanity Base Weight: 295 lbs. (without basins` },
                     ]
-                },
-                {
-                    title: 'Specifications',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
-                    title: 'Shipping and Returns',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
                 },
             ]
     },
@@ -341,10 +257,6 @@ export const furnitureItems = [
         tabData:
             [
                 {
-                    title: 'Details',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
                     title: 'Dimensions',
                     description: [
                         { li: `60* Vanity with Top: 60"W × 24"D × 34'H` },
@@ -360,14 +272,6 @@ export const furnitureItems = [
                         { li: `Countertop Weight: 190 lbs.` },
                         { li: `Vanity Base Weight: 295 lbs. (without basins` },
                     ]
-                },
-                {
-                    title: 'Specifications',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
-                },
-                {
-                    title: 'Shipping and Returns',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip'
                 },
             ]
     },
