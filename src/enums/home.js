@@ -5,15 +5,13 @@ export const furnitureItems = [
         imgType: 'langmore_60',
         detailsList:
             [
-                { value: 'The finish in our hardware is Black' },
-                { value: 'Our counters are ‘cultured marble with gray veining”  - 18mm thick.' },
-                { value: 'I don’t know what a vitreous sink is and we shouldn’t mention china. We should put “rectangular white porcelain under mount sink”' },
+                { value: 'Counters in cultured marble with grey vaining.' },
+                { value: 'Rectangular white porcelain undermount sink.' },
+                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood.' },
+                { value: 'Soft close door and drawer hardware.' },
+                { value: 'Removable drawer dividers.' },
                 { value: 'Faucet and furnishing not included.' },
-                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood' },
-                { value: 'Soft close door and drawer hardware' },
-                { value: 'Removable drawer dividers' },
-                { value: 'Sliding power shelf with 120v and 12v USB outlets' },
-                { value: 'The finish text should change with the associated finished vanity pic.' }
+                { value: 'Sliding power shelf with 120v and 12v USB outlets.' },
             ],
         tabData:
             [
@@ -54,15 +52,12 @@ export const furnitureItems = [
         imgType: 'malibu_60',
         detailsList:
             [
-                { value: 'The finish in our hardware is Black' },
-                { value: 'Our counters are ‘cultured marble with gray veining”  - 18mm thick.' },
-                { value: 'I don’t know what a vitreous sink is and we shouldn’t mention china. We should put “rectangular white porcelain under mount sink”' },
+                { value: 'Counters in cultured marble with grey vaining.' },
+                { value: 'Rectangular white porcelain undermount sink.' },
+                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood.' },
+                { value: 'Soft close door and drawer hardware.' },
+                { value: 'Removable drawer dividers.' },
                 { value: 'Faucet and furnishing not included.' },
-                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood' },
-                { value: 'Soft close door and drawer hardware' },
-                { value: 'Removable drawer dividers' },
-                { value: 'Sliding power shelf with 120v and 12v USB outlets' },
-                { value: 'The finish text should change with the associated finished vanity pic.' }
             ],
         tabData:
             [
@@ -103,15 +98,13 @@ export const furnitureItems = [
         imgType: 'soho_60',
         detailsList:
             [
-                { value: 'The finish in our hardware is Black' },
-                { value: 'Our counters are ‘cultured marble with gray veining”  - 18mm thick.' },
-                { value: 'I don’t know what a vitreous sink is and we shouldn’t mention china. We should put “rectangular white porcelain under mount sink”' },
+                { value: 'Counters in cultured marble with grey vaining.' },
+                { value: 'Rectangular white porcelain undermount sink.' },
+                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood.' },
+                { value: 'Soft close door and drawer hardware.' },
+                { value: 'Removable drawer dividers.' },
                 { value: 'Faucet and furnishing not included.' },
-                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood' },
-                { value: 'Soft close door and drawer hardware' },
-                { value: 'Removable drawer dividers' },
-                { value: 'Sliding power shelf with 120v and 12v USB outlets' },
-                { value: 'The finish text should change with the associated finished vanity pic.' }
+                { value: 'Sliding power shelf with 120v and 12v USB outlets.' },
             ],
         tabData:
             [
@@ -152,15 +145,13 @@ export const furnitureItems = [
         imgType: 'prestige_60',
         detailsList:
             [
-                { value: 'The finish in our hardware is Black' },
-                { value: 'Our counters are ‘cultured marble with gray veining”  - 18mm thick.' },
-                { value: 'I don’t know what a vitreous sink is and we shouldn’t mention china. We should put “rectangular white porcelain under mount sink”' },
+                { value: 'Counters in cultured marble with grey vaining.' },
+                { value: 'Rectangular white porcelain undermount sink.' },
+                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood.' },
+                { value: 'Soft close door and drawer hardware.' },
+                { value: 'Removable drawer dividers.' },
                 { value: 'Faucet and furnishing not included.' },
-                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood' },
-                { value: 'Soft close door and drawer hardware' },
-                { value: 'Removable drawer dividers' },
-                { value: 'Sliding power shelf with 120v and 12v USB outlets' },
-                { value: 'The finish text should change with the associated finished vanity pic.' }
+                { value: 'Sliding power shelf with 120v and 12v USB outlets.' },
             ],
         tabData:
             [
@@ -201,15 +192,13 @@ export const furnitureItems = [
         imgType: 'langmore_36',
         detailsList:
             [
-                { value: 'The finish in our hardware is Black' },
-                { value: 'Our counters are ‘cultured marble with gray veining”  - 18mm thick.' },
-                { value: 'I don’t know what a vitreous sink is and we shouldn’t mention china. We should put “rectangular white porcelain under mount sink”' },
+                { value: 'Counters in cultured marble with grey vaining.' },
+                { value: 'Rectangular white porcelain undermount sink.' },
+                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood.' },
+                { value: 'Soft close door and drawer hardware.' },
+                { value: 'Removable drawer dividers.' },
                 { value: 'Faucet and furnishing not included.' },
-                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood' },
-                { value: 'Soft close door and drawer hardware' },
-                { value: 'Removable drawer dividers' },
-                { value: 'Sliding power shelf with 120v and 12v USB outlets' },
-                { value: 'The finish text should change with the associated finished vanity pic.' }
+                { value: 'Sliding power shelf with 120v and 12v USB outlets.' },
             ],
         tabData:
             [
@@ -250,15 +239,12 @@ export const furnitureItems = [
         imgType: 'malibu_36',
         detailsList:
             [
-                { value: 'The finish in our hardware is Black' },
-                { value: 'Our counters are ‘cultured marble with gray veining”  - 18mm thick.' },
-                { value: 'I don’t know what a vitreous sink is and we shouldn’t mention china. We should put “rectangular white porcelain under mount sink”' },
+                { value: 'Counters in cultured marble with grey vaining.' },
+                { value: 'Rectangular white porcelain undermount sink.' },
+                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood.' },
+                { value: 'Soft close door and drawer hardware.' },
+                { value: 'Removable drawer dividers.' },
                 { value: 'Faucet and furnishing not included.' },
-                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood' },
-                { value: 'Soft close door and drawer hardware' },
-                { value: 'Removable drawer dividers' },
-                { value: 'Sliding power shelf with 120v and 12v USB outlets' },
-                { value: 'The finish text should change with the associated finished vanity pic.' }
             ],
         tabData:
             [
@@ -299,15 +285,12 @@ export const furnitureItems = [
         imgType: 'soho_36',
         detailsList:
             [
-                { value: 'The finish in our hardware is Black' },
-                { value: 'Our counters are ‘cultured marble with gray veining”  - 18mm thick.' },
-                { value: 'I don’t know what a vitreous sink is and we shouldn’t mention china. We should put “rectangular white porcelain under mount sink”' },
+                { value: 'Counters in cultured marble with grey vaining.' },
+                { value: 'Rectangular white porcelain undermount sink.' },
+                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood.' },
+                { value: 'Soft close door and drawer hardware.' },
+                { value: 'Removable drawer dividers.' },
                 { value: 'Faucet and furnishing not included.' },
-                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood' },
-                { value: 'Soft close door and drawer hardware' },
-                { value: 'Removable drawer dividers' },
-                { value: 'Sliding power shelf with 120v and 12v USB outlets' },
-                { value: 'The finish text should change with the associated finished vanity pic.' }
             ],
         tabData:
             [
@@ -348,15 +331,12 @@ export const furnitureItems = [
         imgType: 'prestige 36',
         detailsList:
             [
-                { value: 'The finish in our hardware is Black' },
-                { value: 'Our counters are ‘cultured marble with gray veining”  - 18mm thick.' },
-                { value: 'I don’t know what a vitreous sink is and we shouldn’t mention china. We should put “rectangular white porcelain under mount sink”' },
+                { value: 'Counters in cultured marble with grey vaining.' },
+                { value: 'Rectangular white porcelain undermount sink.' },
+                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood.' },
+                { value: 'Soft close door and drawer hardware.' },
+                { value: 'Removable drawer dividers.' },
                 { value: 'Faucet and furnishing not included.' },
-                { value: 'Premium hardwood construction utilizing predominantly birch lumber and birch plywood' },
-                { value: 'Soft close door and drawer hardware' },
-                { value: 'Removable drawer dividers' },
-                { value: 'Sliding power shelf with 120v and 12v USB outlets' },
-                { value: 'The finish text should change with the associated finished vanity pic.' }
             ],
         tabData:
             [

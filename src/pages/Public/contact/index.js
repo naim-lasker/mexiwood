@@ -59,13 +59,12 @@ const Contact = () => {
                                         <p className='mb-0'> (+088) 222-9999</p>
                                     </div>
                                 </div> */}
-                                <div className="row page-content">
+                                <div className="row align-items-center page-content">
                                     <div className='info'>
                                         <img src={require('../../../images/svg/Email.svg')}></img>
                                     </div>
                                     <div>
-                                        <p className='mb-0'>support@rstheme.com</p>
-                                        <p className='mb-0'> info@codesless.com</p>
+                                        <p className='mb-0'>ofir@taliwood.com</p>
                                     </div>
                                 </div>
                             </div>
