@@ -73,7 +73,7 @@ const Details = () => {
     const [slider1, setSlider1] = useState(null);
     const [slider2, setSlider2] = useState(null);
     const [currentColor, setCurrentColor] = useState('cream');
-    const [colorId, setColorId] = useState(1);
+    const [colorId, setColorId] = useState(null);
     const [navTop, setNavTop] = useState(null);
     const [sliderTop, setSliderTop] = useState(null);
 
@@ -291,14 +291,14 @@ const Details = () => {
                                 return (
                                     <SwiperSlide key={index}>
                                         <img
-                                            src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${colorId == 1 ? 1 : colorId == 2 ? 2 : colorId == 3 ? 3 : colorId}.jpg`)} />
+                                            src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
                                     </SwiperSlide>
                                 )
                             }
                             )}
                         </Swiper>
                         <Swiper
-                            onSwiper={setSwiperRef}
+                            onSwiper={setActiveThumb}
                             loop={true}
                             spaceBetween={10}
                             slidesPerView={4}
@@ -312,7 +312,7 @@ const Details = () => {
                                     <SwiperSlide key={index}>
                                         <div className="product-images-slider-thumbs-wrapper">
 
-                                            <img onClick={() => resetColor(slide.id)}
+                                            <img
                                                 src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
                                         </div>
                                     </SwiperSlide>
