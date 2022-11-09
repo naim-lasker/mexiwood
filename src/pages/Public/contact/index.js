@@ -36,28 +36,10 @@ const Contact = () => {
                     <div className="col-12 col-md-5 ">
                         <div className='bg'>
                             <img className='bg-img' src={require('../../../images/svg/contact.svg')} />
-                            <div className="c-content">
-                                <div className="page-title">
+                            <div className="c-content d-flex justify-content-center">
+                                {/* <div className="page-title">
                                     <p>Objectively innovate your empowered manufactured
                                         products whereas parallel platforms for your ideas.</p>
-                                </div>
-                                {/* <div className="row page-content">
-                                    <div className='info'>
-                                        <img src={require('../../../images/svg/loc.svg')}></img>
-                                    </div>
-                                    <div>
-                                        <p className='mb-0'>Ta-134/A, Gulshan Badda</p>
-                                        <p className='mb-0'>Link Rd, Dhaka</p>
-                                    </div>
-                                </div>
-                                <div className="row page-content">
-                                    <div className='info'>
-                                        <img src={require('../../../images/svg/ph.svg')}></img>
-                                    </div>
-                                    <div>
-                                        <p className='mb-0'>(+088) 589-8745</p>
-                                        <p className='mb-0'> (+088) 222-9999</p>
-                                    </div>
                                 </div> */}
                                 <div className="row align-items-center page-content">
                                     <div className='info'>
