@@ -7,7 +7,7 @@ const SingleHomeItem = ({ item, imgType, imgName }) => {
     return (
         <div className='gallery'>
             <Link to={{
-                pathname: `/details/${item?.imgType}`,
+                pathname: `/${item?.imgType}`,
                 data: item,
                 color: path
             }} style={{ textDecoration: 'none' }}>
