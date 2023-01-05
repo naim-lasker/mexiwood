@@ -1,30 +1,25 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { furnitureItems } from '../../../enums/home';
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import { slidesData } from '../../../enums/slider'
-import { Popover, PopoverBody } from 'reactstrap';
 import { AiOutlineLeft, AiOutlineRight, AiOutlinePlus } from 'react-icons/ai';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Thumbs, Pagination } from 'swiper'
 import 'swiper/swiper.min.css'
 import 'swiper/modules/pagination/pagination.min.css'
 import { useSwiper } from 'swiper/react';
 
-
-
-
-
 const Details = () => {
     const swiper = useSwiper();
 
     const location = useLocation();
+    const { name } = useParams();
     const data = location.data;
     const color = location.color;
     const [open, setOpen] = useState(false)
@@ -318,8 +313,8 @@ const Details = () => {
                                     </SwiperSlide>
                                 </div>
                             )}
-                            <div class="swiper-button-next" onClick={handleRightClick}><AiOutlineRight/></div>
-                            <div className="swiper-button-prev" onClick={handleLeftClick}><AiOutlineLeft/></div>
+                            <div class="swiper-button-next" onClick={handleRightClick}><AiOutlineRight /></div>
+                            <div className="swiper-button-prev" onClick={handleLeftClick}><AiOutlineLeft /></div>
                         </Swiper>
                         {/* </div> */}
                     </Col>

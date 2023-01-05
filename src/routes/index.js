@@ -43,7 +43,7 @@ const Routes = () => {
                     component={Details}
                     exact
                     layout={PublicMain2}
-                    path='/details'
+                    path='/details/:name'
                     title='Details'
                 />
             </Switch>
