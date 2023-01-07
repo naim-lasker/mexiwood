@@ -196,7 +196,8 @@ const Details = () => {
     const [selectedData, setSelectedData] = useState(furnitureItems[0])
 
     useEffect(() => {
-        setSelectedData(data ? data : furnitureItems[0])
+        const filteredFurniture = furnitureItems.filter(item => item.imgType === location.pathname.replace('/',''))
+        setSelectedData(data ? data : filteredFurniture[0])
         setCurrentColor(color ? color : 'white')
     }, [data])
 
@@ -303,8 +304,8 @@ const Details = () => {
                             className='product-images-slider-thumbs'
                         >
                             {slidesData.map((slide, index) =>
-                                <div>
-                                    <SwiperSlide key={index}>
+                                <div key={slide}>
+                                    <SwiperSlide>
                                         <div className="product-images-slider-thumbs-wrapper">
 
                                             <img
@@ -313,7 +314,7 @@ const Details = () => {
                                     </SwiperSlide>
                                 </div>
                             )}
-                            <div class="swiper-button-next" onClick={handleRightClick}><AiOutlineRight /></div>
+                            <div className="swiper-button-next" onClick={handleRightClick}><AiOutlineRight /></div>
                             <div className="swiper-button-prev" onClick={handleLeftClick}><AiOutlineLeft /></div>
                         </Swiper>
                         {/* </div> */}
