@@ -244,7 +244,7 @@ export const furnitureItems = [
     {
         catagory: 'Prestige 36',
         img: require('../images/svg/ven/ven5.svg'),
-        imgType: 'prestige 36',
+        imgType: 'prestige_36',
         detailsList:
             [
                 { value: 'Counters in cultured marble with grey vaining.' },
