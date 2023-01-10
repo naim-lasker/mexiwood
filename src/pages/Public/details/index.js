@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { furnitureItems } from '../../../enums/home';
 // import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
@@ -196,7 +196,7 @@ const Details = () => {
     const [selectedData, setSelectedData] = useState(furnitureItems[0])
 
     useEffect(() => {
-        const filteredFurniture = furnitureItems.filter(item => item.imgType === location.pathname.replace('/',''))
+        const filteredFurniture = furnitureItems.filter(item => item.imgType === location.pathname.replace('/', ''))
         setSelectedData(data ? data : filteredFurniture[0])
         setCurrentColor(color ? color : 'white')
     }, [data])
@@ -204,25 +204,13 @@ const Details = () => {
     // console.log('furnitureItems', furnitureItems[0]);
     // console.log('selectedData', selectedData);
     const [activeThumb, setActiveThumb] = useState()
-    const [swiperRef, setSwiperRef] = useState();
+    const navigationPrevRef = useRef(null)
+    const navigationNextRef = useRef(null)
 
-    const handleLeftClick = useCallback(() => {
-        if (!swiperRef) return;
-        swiperRef.slidePrev();
-    }, [swiperRef]);
-
-    const handleRightClick = useCallback(() => {
-        if (!swiperRef) return;
-        swiperRef.slideNext();
-    }, [swiperRef]);
     return (
-        <>
-
-
-
-            <section className='home-main'>
-                <h2 className='title2'>Bathroom Vanities</h2>
-                {/* <div >
+        <section className='home-main'>
+            <h2 className='title2'>Bathroom Vanities</h2>
+            {/* <div >
                     <Slider className='main-carousel' {...settings} asNavFor={navTop}
                         ref={slider => (setSliderTop(slider))} >
 
@@ -236,10 +224,10 @@ const Details = () => {
                         )}
                     </Slider>
                 </div> */}
-                <Row className='pt-4'>
-                    <Col xs={12} md={6} className="mx-auto">
-                        {/* <div className="slider-wrapper d-flex flex-column align-items-center"> */}
-                        {/* <Slider
+            <Row className='pt-4'>
+                <Col xs={12} md={6} className="mx-auto">
+                    {/* <div className="slider-wrapper d-flex flex-column align-items-center"> */}
+                    {/* <Slider
                                 {...settingsMain}
                                 asNavFor={nav2}
                                 ref={slider => (setSlider1(slider))}
@@ -273,117 +261,124 @@ const Details = () => {
 
                                 </Slider>
                             </div> */}
-                        <Swiper
-                            loop={true}
-                            spaceBetween={10}
-                            navigation={true}
-                            modules={[Navigation, Thumbs]}
-                            grabCursor={true}
-                            thumbs={{ swiper: activeThumb }}
-                            className='product-images-slider'
-                        >
-                            {slidesData.map((slide, index) => {
+                    <Swiper
+                        loop={true}
+                        spaceBetween={10}
+                        navigation={true}
+                        modules={[Navigation, Thumbs]}
+                        grabCursor={true}
+                        thumbs={{ swiper: activeThumb }}
+                        className='product-images-slider'
+                    >
+                        {slidesData.map((slide, index) => {
 
-                                return (
-                                    <SwiperSlide key={index}>
+                            return (
+                                <SwiperSlide key={index}>
+                                    <img
+                                        src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
+                                </SwiperSlide>
+                            )
+                        }
+                        )}
+                    </Swiper>
+                    <Swiper
+                        onSwiper={setActiveThumb}
+                        loop={true}
+                        spaceBetween={10}
+                        slidesPerView={4}
+                        navigation={{
+                            prevEl: navigationPrevRef.current,
+                            nextEl: navigationNextRef.current,
+                        }}
+                        modules={[Navigation, Thumbs, Pagination]}
+                        onBeforeInit={(swiper) => {
+                            swiper.params.navigation.prevEl = navigationPrevRef.current;
+                            swiper.params.navigation.nextEl = navigationNextRef.current;
+                        }}
+                        observer
+                        observeParents
+                        className='product-images-slider-thumbs'
+                    >
+                        {slidesData.map((slide, index) =>
+                            <div key={slide}>
+                                <SwiperSlide>
+                                    <div className="product-images-slider-thumbs-wrapper">
+
                                         <img
                                             src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
-                                    </SwiperSlide>
-                                )
-                            }
-                            )}
-                        </Swiper>
-                        <Swiper
-                            onSwiper={setActiveThumb}
-                            loop={true}
-                            spaceBetween={10}
-                            slidesPerView={4}
-                            modules={[Navigation, Thumbs, Pagination]}
-                            observer
-                            observeParents
-                            className='product-images-slider-thumbs'
-                        >
-                            {slidesData.map((slide, index) =>
-                                <div key={slide}>
-                                    <SwiperSlide>
-                                        <div className="product-images-slider-thumbs-wrapper">
+                                    </div>
+                                </SwiperSlide>
+                            </div>
+                        )}
+                        <div ref={navigationNextRef} className="swiper-button-next"><AiOutlineRight /></div>
+                        <div ref={navigationPrevRef} className="swiper-button-prev"><AiOutlineLeft /></div>
+                    </Swiper>
+                    {/* </div> */}
+                </Col>
 
-                                            <img
-                                                src={require(`../../../images/img/${selectedData?.imgType}/angle_${currentColor}${slide.id}.jpg`)} />
-                                        </div>
-                                    </SwiperSlide>
-                                </div>
-                            )}
-                            <div className="swiper-button-next" onClick={handleRightClick}><AiOutlineRight /></div>
-                            <div className="swiper-button-prev" onClick={handleLeftClick}><AiOutlineLeft /></div>
-                        </Swiper>
-                        {/* </div> */}
-                    </Col>
-
-                    <Col xs={12} md={6} className="mt-4 mt-md-0 color-item  ">
-                        <Row className=' circle'>
-                            <Col xs={{ span: 12, order: 2 }} md={{ span: 12, order: 1 }}>
-                                <div className='list mt-5 mt-md-0'>
-                                    <h2>{selectedData?.catagory}</h2>
-                                    <ul className='pt-2 px-3 px-sm-3'>
-                                        {selectedData?.detailsList.map((item, i) =>
-                                            <li key={i}>{item.value}</li>
-                                        )}
-
-                                    </ul>
-
-                                </div>
-                            </Col>
-                            <Col xs={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }} className="three-img d-flex flex-row align-items-center align-items-md-start  justify-content-center justify-content-md-start">
-                                <img id="Popover3" className="slick-slide-image4" onMouseEnter={onHover3} onMouseLeave={onHoverLeave3} onClick={() => testImage('white')} src={require(`../../../images/svg/ven/circle3.png`)} />
-                                <img id="Popover2" className="slick-slide-image4" onMouseEnter={onHover2} onMouseLeave={onHoverLeave2} onClick={() => testImage('gray')} src={require(`../../../images/svg/ven/circle2.svg`)} />
-                                <img id="Popover1" onMouseEnter={onHover} onMouseLeave={onHoverLeave} className="slick-slide-image4" onClick={() => testImage('cream')} src={require(`../../../images/svg/ven/circle1.svg`)} />
-                            </Col>
-
-                        </Row>
-
-                        <Row className='w-100'>
-                            <Col xs={12}>
-                                <Accordion defaultActiveKey={activeId} className="pt-5 pb-5 mb-5">
-                                    {selectedData?.tabData.map((item, i) =>
-                                        <Card key={i} className="rounded-lg border-0">
-                                            <Accordion.Toggle
-                                                as={Card.Header}
-                                                eventKey={`${i}`}
-                                                onClick={() => toggleActive(`${i}`)}
-                                                className={activeId === `${i}` ? "active title" : 'title'}
-                                            >
-                                                <div className='d-flex align-items-center justify-content-between'>
-                                                    <h4>{item.title}</h4>
-                                                    <AiOutlinePlus size={20} />
-                                                </div>
-                                            </Accordion.Toggle>
-                                            <Accordion.Collapse eventKey={`${i}`}>
-                                                <Card.Body>
-                                                    {Array.isArray(item?.description) ?
-                                                        <ul className='card-list pt-2'>
-                                                            {item.description.map((item, i) =>
-                                                                <li key={i}>{item.li}</li>
-                                                            )}
-
-                                                        </ul> :
-                                                        <p className="text-muted">
-                                                            {item.description}
-                                                        </p>
-
-                                                    }
-                                                </Card.Body>
-                                            </Accordion.Collapse>
-                                        </Card>
+                <Col xs={12} md={6} className="mt-4 mt-md-0 color-item  ">
+                    <Row className=' circle'>
+                        <Col xs={{ span: 12, order: 2 }} md={{ span: 12, order: 1 }}>
+                            <div className='list mt-5 mt-md-0'>
+                                <h2>{selectedData?.catagory}</h2>
+                                <ul className='pt-2 px-3 px-sm-3'>
+                                    {selectedData?.detailsList.map((item, i) =>
+                                        <li key={i}>{item.value}</li>
                                     )}
 
-                                </Accordion>
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
-            </section>
-        </>
+                                </ul>
+
+                            </div>
+                        </Col>
+                        <Col xs={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }} className="three-img d-flex flex-row align-items-center align-items-md-start  justify-content-center justify-content-md-start">
+                            <img id="Popover3" className="slick-slide-image4" onMouseEnter={onHover3} onMouseLeave={onHoverLeave3} onClick={() => testImage('white')} src={require(`../../../images/svg/ven/circle3.png`)} />
+                            <img id="Popover2" className="slick-slide-image4" onMouseEnter={onHover2} onMouseLeave={onHoverLeave2} onClick={() => testImage('gray')} src={require(`../../../images/svg/ven/circle2.svg`)} />
+                            <img id="Popover1" onMouseEnter={onHover} onMouseLeave={onHoverLeave} className="slick-slide-image4" onClick={() => testImage('cream')} src={require(`../../../images/svg/ven/circle1.svg`)} />
+                        </Col>
+
+                    </Row>
+
+                    <Row className='w-100'>
+                        <Col xs={12}>
+                            <Accordion defaultActiveKey={activeId} className="pt-5 pb-5 mb-5">
+                                {selectedData?.tabData.map((item, i) =>
+                                    <Card key={i} className="rounded-lg border-0">
+                                        <Accordion.Toggle
+                                            as={Card.Header}
+                                            eventKey={`${i}`}
+                                            onClick={() => toggleActive(`${i}`)}
+                                            className={activeId === `${i}` ? "active title" : 'title'}
+                                        >
+                                            <div className='d-flex align-items-center justify-content-between'>
+                                                <h4>{item.title}</h4>
+                                                <AiOutlinePlus size={20} />
+                                            </div>
+                                        </Accordion.Toggle>
+                                        <Accordion.Collapse eventKey={`${i}`}>
+                                            <Card.Body>
+                                                {Array.isArray(item?.description) ?
+                                                    <ul className='card-list pt-2'>
+                                                        {item.description.map((item, i) =>
+                                                            <li key={i}>{item.li}</li>
+                                                        )}
+
+                                                    </ul> :
+                                                    <p className="text-muted">
+                                                        {item.description}
+                                                    </p>
+
+                                                }
+                                            </Card.Body>
+                                        </Accordion.Collapse>
+                                    </Card>
+                                )}
+
+                            </Accordion>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+        </section>
     )
 }
 
