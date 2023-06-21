@@ -1,5 +1,17 @@
 //--------- Start News Area -------------//
 
+.kitchen-btn {
+  background-color: #6200FF;
+  padding: 17.5px 20px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.vanity-kitchen-img {
+  height: 85%;
+}
+
 .slick-slide-image {
   margin: 0 10px !important;
   width: 90%;
