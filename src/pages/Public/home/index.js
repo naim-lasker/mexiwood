@@ -30,13 +30,13 @@ const Home = () => {
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
             >
-                <Modal.Body className='mt-4'>
+                <Modal.Body className='mt-4 pb-5 pb-md-0'>
                     <Container>
                         <Row className='align-items-stretch'>
                             <Col lg={7} className='text-center mb-md-0 mb-5'>
                                 <img className="img-fluid vanity-kitchen-img w-100" src='/img/vanity.png' />
                                 <button
-                                    className='mt-4 text-white border-0 rounded-lg cursor-pointer w-100 bg-vanity'
+                                    className='mt-4 text-white border-0 rounded-lg cursor-pointer w-100 bg-dark'
                                     onClick={() => setModalShow(false)}>
                                     Vanities
                                 </button>

@@ -1,9 +1,11 @@
 //--------- Start News Area -------------//
 
 .kitchen-btn {
-  background-color: #6200FF;
+  background-color: #343a40;
   padding: 17.5px 20px;
+  transition: 0.3s ease-in-out;
   &:hover {
+    background-color: #1d2124;
     text-decoration: none;
   }
 }
