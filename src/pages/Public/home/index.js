@@ -29,27 +29,32 @@ const Home = () => {
                 size="xl"
                 aria-labelledby="contained-modal-title-vcenter"
                 centered
-                className="bg-dark rounded"
+                className="bg-dark rounded home-modal"
             >
-                <Modal.Body className='my-3'>
-                    <Container>
-                        <Row className=''>
-                            <Col lg={6} className='text-center mb-md-0 mb-5'>
-                                <img className="img-fluid vanity-kitchen-img w-100" src='/img/vanity.png' />
+                <Modal.Body className='my-3 p-0 p-md-3'>
+                    <Container className='d-flex flex-column justify-content-between h-100'>
+                        <Row className='flex-grow-1'>
+                            <Col sm={12} lg={6} className='d-flex flex-column text-center mb-md-0 mb-3'>
+                                <div className="img-wrapper">
+                                    <img className="vanity-kitchen-img w-100" src='/img/vanity.png' />
+                                </div>
                                 <button
-                                    className='mt-4 text-white border-0 rounded-lg cursor-pointer w-100 bg-dark'
+                                    className='mt-2 mt-md-4 text-white border-0 rounded-lg cursor-pointer w-100 bg-dark'
                                     onClick={() => setModalShow(false)}>
                                     Vanities
                                 </button>
                             </Col>
-                            <Col lg={6} className='text-center'>
-                                <img className="img-fluid vanity-kitchen-img w-100" src='/img/cabinet.png' />
+                            <Col sm={12} lg={6} className='d-flex flex-column text-center'>
+                                <div className="img-wrapper">
+                                    <img className="vanity-kitchen-img w-100" src='/img/cabinet.png' />
+                                </div>
                                 <a
-                                    className='kitchen-btn d-block mt-4 text-white border-0 rounded-lg cursor-pointer w-100'
+                                    className='kitchen-btn d-block mt-2 mt-md-4 text-white border-0 rounded-lg cursor-pointer w-100'
                                     href='https://ezclickcabinets.netlify.app'>
                                     Kitchen
                                 </a>
                             </Col>
+
                         </Row>
                     </Container>
                 </Modal.Body>

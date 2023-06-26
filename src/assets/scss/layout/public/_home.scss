@@ -1,4 +1,6 @@
 //--------- Start News Area -------------//
+.home-modal {
+}
 
 .kitchen-btn {
   background-color: #343a40;
@@ -12,6 +14,35 @@
 
 .vanity-kitchen-img {
   border-radius: 25px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  @media only screen and (max-width: 600px) {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-modal {
+    &.modal {
+      padding: 0 15px;
+    }
+    .modal-dialog {
+      max-width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .modal-content {
+      height: auto;
+      border-radius: 0;
+      overflow-y: auto;
+    }
+    .img-wrapper {
+      height: 32vh;
+      overflow: hidden;
+    }
+  }
 }
 
 .slick-slide-image {
@@ -487,13 +518,13 @@
     justify-content: center;
     // border-radius: 100% !important;
     outline: none;
-  
+
     @media only screen and (max-width: 420px) {
       width: 20px !important;
     }
-    
+
     &::after {
-        font-size: 16px;
+      font-size: 16px;
     }
   }
   .swiper-button-prev {
@@ -513,24 +544,24 @@
     @media only screen and (max-width: 1024px) {
       height: 100px;
     }
-  
+
     @media only screen and (max-width: 420px) {
       width: 20px !important;
     }
   }
-  
-  
-  .swiper-button-prev{
+
+  .swiper-button-prev {
     left: 0px;
     right: auto;
   }
-  
-  .swiper-button-next{
+
+  .swiper-button-next {
     right: 0px;
     left: auto;
   }
-  
-  .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+
+  .swiper-button-prev.swiper-button-disabled,
+  .swiper-button-next.swiper-button-disabled {
     opacity: 1 !important;
     cursor: auto;
     pointer-events: none;
@@ -558,8 +589,3 @@
     }
   }
 }
-
-
-
-
-
