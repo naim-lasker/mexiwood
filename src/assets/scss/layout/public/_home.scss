@@ -54,6 +54,7 @@
   .home-modal {
     &.modal {
       padding: 0;
+      padding-right: 0;
     }
     .modal-dialog {
       max-width: 100%;
@@ -72,6 +73,7 @@
     .img-wrapper {
       height: 50vh;
       overflow: hidden;
+      border-right: 0px;
     }
     .vanity-kitchen-img {
       height: 100vh
