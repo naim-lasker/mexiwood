@@ -1,31 +1,59 @@
 //--------- Start News Area -------------//
 .home-modal {
+  .modal-content {
+    background-color: transparent;
+    border: 0px;
+  }
+
+  .img-wrapper {
+    position: relative;
+    border-right: 2px solid transparent;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .text-container {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+  }
+}
+.vinities-btn {
+  height: auto;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  &:focus {
+    outline: none;
+  }
 }
 
 .kitchen-btn {
-  background-color: #343a40;
-  padding: 17.5px 20px;
-  transition: 0.3s ease-in-out;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0;
   &:hover {
-    background-color: #1d2124;
     text-decoration: none;
   }
 }
 
+
 .vanity-kitchen-img {
-  border-radius: 25px;
   width: 100%;
   height: auto;
   object-fit: cover;
-  @media only screen and (max-width: 600px) {
-    border-radius: 0;
-  }
 }
 
 @media only screen and (max-width: 600px) {
   .home-modal {
     &.modal {
-      padding: 0 15px;
+      padding: 0;
     }
     .modal-dialog {
       max-width: 100%;
@@ -38,9 +66,15 @@
       border-radius: 0;
       overflow-y: auto;
     }
+    .text-container-title {
+      font-size: 24px;
+    }
     .img-wrapper {
-      height: 32vh;
+      height: 50vh;
       overflow: hidden;
+    }
+    .vanity-kitchen-img {
+      height: 100vh
     }
   }
 }
